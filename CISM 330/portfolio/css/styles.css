@@ -1,0 +1,247 @@
+/*
+Name: Ghali Badawi
+File: style.css
+Date: 02/15/2026
+*/
+
+
+/* CSS RESET — removes default spacing and normalizes elements across browsers */
+html, body, header, nav, main, footer,
+section, article, aside, address, figure, figcaption,
+div, h1, h2, h3, p, ul, li, a, img, iframe, 
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #ffffff;
+  color: #111827;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header styles begin */
+header {
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+header h2 {
+  font-size: 1.05rem;
+  color: #374151;
+  margin-top: 6px;
+}
+
+header img {
+  width: 140px;
+  border-radius: 18px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #e5e7eb;
+}
+
+header figure.profile-figure {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+header figure.profile-figure img {
+  width: 140px;
+  border-radius: 18px;
+  border: 2px solid #e5e7eb;
+  display: block;
+}
+
+header figure.profile-figure .tagline {
+  font-size: 1.05rem;
+  color: #374151;
+  margin-top: 0;
+}
+
+/* Nav styles begin */
+nav {
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #0b1f34;
+  color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.08s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #1aa6a6;
+  outline-offset: 2px;
+}
+
+nav a:hover {
+  background: #12304f;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(11, 31, 52, 0.18);
+}
+
+nav a[aria-current="page"] {
+  background: #1aa6a6;
+  color: #062024;
+}
+
+/* Main styles begin */
+main {
+  padding: 22px 0;
+}
+
+main h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+main h3 {
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main a {
+  color: #1aa6a6;
+  font-weight: 600;
+}
+
+main a:hover {
+  color: #148b8b;
+}
+
+.card {
+  background: #f5f7fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.10);
+  transform: translateY(-1px);
+}
+
+main ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin-top: 8px;
+}
+
+main li {
+  margin-bottom: 6px;
+}
+
+#hero {
+  border-left: 6px solid #1aa6a6;
+}
+
+main dl {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 2fr;
+  gap: 6px 14px;
+  margin-top: 8px;
+}
+
+main dt {
+  font-weight: 600;
+  color: #374151;
+}
+
+main dd {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+  margin: 10px 0;
+}
+
+address p {
+  margin-bottom: 6px;
+}
+
+/* Footer styles begin */
+footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #1aa6a6;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #148b8b;
+}
+
+main iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  header figure.profile-figure {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+}

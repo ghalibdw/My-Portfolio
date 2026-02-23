@@ -2,19 +2,24 @@
 <!--
 Name: Ghali Badawi
 File: index.html
-Date: 02/15/2026
+Date: 02/22/2026
 --> 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="utf-8" ame="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
     <title>Portfolio: Home</title>
 </head>
 <body>
     <header class="container">
         <h1>Ghali Badawi</h1>
-        <img src="images/ghalibadawi.jpg" alt="Picture of myself">
-        <h2>Mission: Build accessible, user-friendly web experiences</h2>
+
+        <figure class="profile-figure">
+            <img src="images/ghalibadawi.jpg" alt="Picture of myself">
+            <figcaption class="tagline">
+                Mission: Build accessible, user-friendly web experiences
+            </figcaption>
+        </figure>
     </header>
     <nav class="container" aria-label="Primary">
         <ul>
@@ -23,6 +28,7 @@ Date: 02/15/2026
              <li><a href="projects.html">Projects</a></li>
              <li><a href="skills.html">Skills</a></li>
              <li><a href="about.html">Background</a></li>
+             <li><a href="resume.html">Resume</a></li>
              <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -30,12 +36,17 @@ Date: 02/15/2026
     <!-- The main element contains the unique, page-specific content. -->
     <main class="container">
         <section class="card" id="hero">
-         <h2>Welcome</h2>
-         <p>Hello! This is the home page for my CISM 330 portfolio website. In this page, you will find information about me, selected class and personal projects, and how to get in touch.</p>
-         <h3>Basic Information</h3>
-         <p>Course: CISM 330</p>
-         <p>Site: Portfolio</p>
-         <p>Last updated: 02/01/2026</p>
+            <h2>Welcome</h2>
+            <p>Hello! This is the home page for my CISM 330 portfolio website. In this page, you will find information about me, selected class and personal projects, and how to get in touch.</p>
+            <h3>Basic Information</h3>
+            <dl>
+                <dt>Course</dt>
+                <dd>CISM 330</dd>
+                <dt>Site</dt>
+                <dd>Portfolio</dd>
+                <dt>Last updated</dt>
+                <dd>02/22/2026</dd>
+            </dl>
         </section>
     </main>
     <footer class="container">
