@@ -1,7 +1,7 @@
 /*
 Name: Ghali Badawi
 File: style.css
-Date: 02/15/2026
+Date: 03/08/2026
 */
 
 
@@ -30,10 +30,11 @@ a {
 }
 
 body {
-  background: #ffffff;
-  color: #111827;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: #111827;
+    font-size: 16px; /* Perfect for accessibility */
+    background: #ffffff;
 }
 
 .container {
@@ -104,6 +105,9 @@ nav ul {
 
 nav a {
   display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   padding: 10px 14px;
   background: #0b1f34;
   color: #ffffff;
@@ -133,6 +137,14 @@ main {
   padding: 22px 0;
 }
 
+p, li, dd, dt {
+    font-size: 1rem;
+    max-width: 70ch;        /* Optimal line length for reading */
+    margin-bottom: 0.75rem;
+}
+
+
+
 main h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
@@ -149,14 +161,18 @@ main p {
 
 main a {
   color: #1aa6a6;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-main a:hover {
+main a:hover, a:focus-visible {
   color: #148b8b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .card {
+  line-height: 1.55;
+  font-size: 1rem;
   background: #f5f7fa;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
@@ -209,14 +225,12 @@ address p {
   margin-bottom: 6px;
 }
 
-/* Form structure */
 form,
 .contact-form {
     width: 100%;
     margin: 0 auto;
 }
 
-/* Fieldset + Inputs */
 fieldset,
 input,
 select,
@@ -242,6 +256,7 @@ label {
     padding-top: 3%;
     font-weight: 600;
     color: #374151;
+    font-size: 1rem;
 }
 
 input,
@@ -252,6 +267,7 @@ textarea {
     border: 1px solid #d1d5db;
     border-radius: 8px;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .btn {
@@ -354,6 +370,7 @@ footer {
   padding: 16px 0;
   color: #4b5563;
   font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 footer a {
@@ -373,14 +390,100 @@ main iframe {
   display: block;
 }
 
-@media (max-width: 480px) {
-  header figure.profile-figure {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .container {
+.container {
     padding: 0 8px;
-  }
+}
+
+:root{
+  --footer-bg: #014f56;
+  --footer-text: #ffffff;
+  --footer-link: #e7fbff;
+  --footer-link-hover: #ffffff;
+  --footer-border: #007680;
+  --footer-shadow: 0 10px 28px rgba(0,0,0,.22);
+}
+
+.footer-card{
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-inner{
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  border: 2px solid var(--footer-border);
+  border-radius: 18px;
+  padding: clamp(1rem, 3vw, 2rem);
+  box-shadow: var(--footer-shadow);
+}
+
+.social-nav{
+  margin-bottom: 1rem;
+}
+
+.social-list{
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.social-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  transition: transform .15s ease, background .2s ease, outline-color .2s ease;
+  outline: 2px solid transparent;
+}
+
+.social-link:hover,
+.social-link:focus{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.18);
+  outline-color: rgba(255,255,255,0.35);
+}
+
+.icon{
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
+}
+
+.footer-info{
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.footer-info p{
+  margin: 0.15rem 0;
+}
+
+.footer-link{
+  color: var(--footer-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+  color: var(--footer-link-hover);
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,1px,1px);
+  white-space: nowrap; border: 0;
+}
+
+@media (max-width: 640px){
+  .footer-inner{ text-align: center; }
+  .social-list{ justify-content: center; }
 }
