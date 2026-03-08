@@ -6,17 +6,19 @@ Date: 03/08/2026
 --> 
 <html lang="en">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>Ghali Badawi | Portfolio - Skills</title>
     <meta name="description" content="Discover Ghali Badawi's skills across front-end development, accessibility, UX, and tooling—emphasizing inclusive, usable web experiences.">
 </head>
 <body>
+    <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
     <header class="container">
         <h1>Ghali Badawi</h1>
 
         <figure class="profile-figure">
-            <img src="images/ghalibadawi.jpg" alt="Picture of myself">
+            <img src="images/ghalibadawi.jpg" alt="Portrait of Ghali Badawi">
             <figcaption class="tagline">
                 Mission: Build accessible, user-friendly web experiences
             </figcaption>
@@ -35,13 +37,15 @@ Date: 03/08/2026
     </nav>
 
     <!-- The main element contains the unique, page-specific content. -->
-    <main class="container">
+    <main id="main" class="container">
         <section class="card" id="hero"></section>
     </main>
-    <footer class="container footer-card" role="contentinfo">
+    <footer class="container footer-card">
         <div class="footer-inner" aria-labelledby="footer-title">
-            <nav class="social-nav" aria-label="Réseaux sociaux">
-            <ul class="social-list" role="list">
+            <nav class="social-nav" aria-label="Social media">
+                <p class="newtab-group-note">(All social media links open in a new tab)</p>
+                
+            <ul class="social-list">
                 <li>
                 <a class="social-link" href="https://www.linkedin.com/in/ghalibadawi/" aria-label="LinkedIn" target="_blank" rel="noopener">
                     <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
