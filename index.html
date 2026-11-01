@@ -1,111 +1,2675 @@
 <!DOCTYPE html>
-<!--
-Name: Ghali Badawi
-File: index.html
-Date: 09/26/2026
---> 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>Ghali Badawi | Portfolio - Home</title>
-    <meta name="description" content="Explore Ghali Badawi's portfolio home: mission, highlights, and links to projects, skills, background, resume, and ways to get in touch.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghali Badawi — Computer Engineering, AI &amp; Software Architecture | ghalibdw</title>
+  <meta name="description" content="Portfolio of Ghali Badawi (ghalibdw) — Computer Engineering student at De Anza College, collegiate soccer midfielder, French Baccalaureate Mention Très Bien (Top 5%, 4.0 GPA), building accessible software, AI systems, and human-centered interfaces in Cupertino, CA." />
+  <meta name="author" content="Ghali Badawi" />
+  <meta name="keywords" content="Ghali Badawi, ghalibdw, Computer Engineering, Software Developer, AI Enthusiast, De Anza College, Stanford University, MIT, UC Berkeley, Cupertino, C++, TypeScript, Python, MatchUp, Student Athlete" />
+  <meta name="theme-color" content="#F8FAFC" />
+
+  <!-- Open Graph / Social Discovery -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ghali Badawi — Computer Engineering &amp; Software Portfolio (ghalibdw)" />
+  <meta property="og:description" content="Computer Engineering Student · Software Developer · AI Enthusiast · Collegiate Student-Athlete based in Cupertino, Silicon Valley." />
+  <meta property="og:site_name" content="ghalibdw" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ghalibdw" />
+  <meta name="twitter:creator" content="@ghalibdw" />
+  <meta name="twitter:title" content="Ghali Badawi — Computer Engineering &amp; Software Portfolio" />
+  <meta name="twitter:description" content="Engineering precise, accessible digital systems with mathematical rigor and athletic discipline. Based in Cupertino, CA." />
+
+  <!-- Inline SVG Favicon (ghalibdw monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300CFC8'/%3E%3Cstop offset='50%25' stop-color='%2300B8D9'/%3E%3Cstop offset='100%25' stop-color='%235B8DEF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230B132B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,system-ui,sans-serif' font-weight='800' font-size='26' fill='url(%23g)'%3EGB%3C/text%3E%3C/svg%3E" />
+
+  <!-- Typography: Inter, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS 3.4.17 -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace']
+          },
+          colors: {
+            brand: {
+              turquoise: '#00CFC8',
+              teal: '#00B8D9',
+              mint: '#4FD1C5',
+              emerald: '#10B981',
+              blue: '#5B8DEF',
+              purple: '#7C5CFC',
+              pink: '#F472B6',
+              ink: '#0F172A',
+              slate: '#475569'
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Structured Data (JSON-LD) for Search Engines & Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ghali Badawi",
+    "alternateName": "ghalibdw",
+    "jobTitle": "Computer Engineering Student & Software Developer",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "De Anza College",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cupertino",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      }
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Lycée Al Jabr, Casablanca"
+    },
+    "email": "mailto:ghalibadawi08@gmail.com",
+    "telephone": "+1-334-710-4645",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cupertino",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/ghalibdw",
+      "https://www.linkedin.com/in/ghalibadawi/",
+      "https://www.instagram.com/badawighali/",
+      "https://www.tiktok.com/@ghalibdw",
+      "https://www.youtube.com/@ghalibdw",
+      "https://www.facebook.com/badawighali",
+      "https://x.com/ghalibdw"
+    ],
+    "knowsLanguage": ["French", "Arabic", "English", "Spanish"],
+    "knowsAbout": ["Computer Engineering", "C++", "Java", "Python", "TypeScript", "JavaScript", "Artificial Intelligence", "Web Accessibility", "Classical Mechanics", "Differential Equations"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAFC;
+      --bg-tertiary: #F1F5F9;
+      --accent-turquoise: #00CFC8;
+      --accent-teal: #00B8D9;
+      --accent-mint: #4FD1C5;
+      --accent-blue: #5B8DEF;
+      --accent-purple: #7C5CFC;
+      --accent-pink: #F472B6;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --border-subtle: rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: rgba(0, 207, 200, 0.22);
+      color: #0F172A;
+    }
+
+    /* Ambient Architectural Background Mesh */
+    .ambient-canvas {
+      background:
+        radial-gradient(circle at 10% 8%, rgba(0, 207, 200, 0.08) 0%, transparent 36%),
+        radial-gradient(circle at 88% 14%, rgba(91, 141, 239, 0.08) 0%, transparent 38%),
+        radial-gradient(circle at 50% 45%, rgba(79, 209, 197, 0.05) 0%, transparent 48%),
+        radial-gradient(circle at 84% 85%, rgba(124, 92, 252, 0.04) 0%, transparent 38%),
+        linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 50%, #FFFFFF 100%);
+    }
+
+    /* Subtle Engineering Grid Overlay */
+    .bg-grid-pattern {
+      background-size: 44px 44px;
+      background-image:
+        linear-gradient(to right, rgba(15, 23, 42, 0.024) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.024) 1px, transparent 1px);
+      mask-image: radial-gradient(ellipse 85% 70% at 50% 30%, #000 50%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 85% 70% at 50% 30%, #000 50%, transparent 100%);
+    }
+
+    /* Glassmorphic Surfaces */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(22px) saturate(190%);
+      -webkit-backdrop-filter: blur(22px) saturate(190%);
+      border: 1px solid rgba(15, 23, 42, 0.075);
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06);
+    }
+
+    .premium-card {
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(15, 23, 42, 0.075);
+      box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.045);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.35s ease;
+    }
+
+    .premium-card:hover {
+      transform: translateY(-2.5px);
+      box-shadow: 0 22px 44px -14px rgba(15, 23, 42, 0.085), 0 0 0 1px rgba(0, 207, 200, 0.25);
+      border-color: rgba(0, 184, 217, 0.3);
+    }
+
+    /* Gradient Text & Accents */
+    .text-gradient-brand {
+      background: linear-gradient(135deg, #00969E 0%, #00B8D9 45%, #5B8DEF 85%, #7C5CFC 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .bg-gradient-brand {
+      background: linear-gradient(135deg, #00CFC8 0%, #00B8D9 50%, #5B8DEF 100%);
+    }
+
+    .btn-primary-gradient {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      color: #FFFFFF;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+    }
+
+    .btn-primary-gradient:hover {
+      transform: translateY(-1.5px);
+      box-shadow: 0 14px 28px -8px rgba(0, 184, 217, 0.32), 0 6px 14px -4px rgba(15, 23, 42, 0.2);
+    }
+
+    /* ===================================================================== */
+    /* 3-CARD SPATIAL CAROUSEL GEOMETRY (FLOU | CLAIR | FLOU)                */
+    /* Fixed uniform height & locked top coordinate so cards NEVER overflow  */
+    /* or cover the navigation dots below!                                   */
+    /* ===================================================================== */
+    .carousel-stage {
+      perspective: 1500px;
+      position: relative;
+      height: 525px;
+      width: 100%;
+      user-select: none;
+      overflow: visible;
+    }
+
+    .carousel-card {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      width: 100%;
+      max-width: 480px;
+      height: 495px;
+      border-radius: 26px;
+      transition:
+        transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.45s ease,
+        background-color 0.45s ease;
+      will-change: transform, opacity;
+      background: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Center Active Card ("CLAIR" — Sharp, Largest, Highlighted) */
+    .carousel-card[data-slot="center"] {
+      transform: translate3d(-50%, 0, 0) scale(1);
+      opacity: 1;
+      z-index: 30;
+      border: 1.5px solid rgba(0, 207, 200, 0.55);
+      box-shadow:
+        0 28px 60px -15px rgba(15, 23, 42, 0.14),
+        0 0 0 4px rgba(0, 207, 200, 0.08),
+        0 12px 28px -6px rgba(0, 184, 217, 0.12);
+      cursor: default;
+    }
+
+    /* Left Peripheral Card ("FLOU" — Smaller, Slightly Darker, Title Crisp, Body Blurred) */
+    .carousel-card[data-slot="left"] {
+      transform: translate3d(-118%, 14px, -110px) scale(0.84) rotateY(5deg);
+      opacity: 0.84;
+      z-index: 20;
+      background: #F8FAFC;
+      border: 1px solid rgba(15, 23, 42, 0.09);
+      box-shadow: 0 16px 32px -12px rgba(15, 23, 42, 0.08);
+      cursor: pointer;
+    }
+
+    /* Right Peripheral Card ("FLOU" — Smaller, Slightly Darker, Title Crisp, Body Blurred) */
+    .carousel-card[data-slot="right"] {
+      transform: translate3d(18%, 14px, -110px) scale(0.84) rotateY(-5deg);
+      opacity: 0.84;
+      z-index: 20;
+      background: #F8FAFC;
+      border: 1px solid rgba(15, 23, 42, 0.09);
+      box-shadow: 0 16px 32px -12px rgba(15, 23, 42, 0.08);
+      cursor: pointer;
+    }
+
+    /* Off-stage Cards */
+    .carousel-card[data-slot="hidden"] {
+      transform: translate3d(-50%, 20px, -240px) scale(0.72);
+      opacity: 0;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    /* Selective Blur: On side cards, the Project Title stays 100% sharp while image/details blur! */
+    .carousel-blur-target {
+      transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+    }
+
+    .carousel-card[data-slot="center"] .carousel-blur-target {
+      filter: blur(0px) brightness(1);
+      opacity: 1;
+    }
+
+    .carousel-card[data-slot="left"] .carousel-blur-target,
+    .carousel-card[data-slot="right"] .carousel-blur-target {
+      filter: blur(3.2px) brightness(0.92) saturate(0.85);
+      opacity: 0.68;
+    }
+
+    .carousel-card[data-slot="left"]:hover,
+    .carousel-card[data-slot="right"]:hover {
+      opacity: 0.96;
+      border-color: rgba(0, 207, 200, 0.45);
+    }
+
+    .carousel-card[data-slot="left"]:hover .carousel-blur-target,
+    .carousel-card[data-slot="right"]:hover .carousel-blur-target {
+      filter: blur(1px) brightness(0.98);
+      opacity: 0.9;
+    }
+
+    /* Responsive adjustments for 3-card stage */
+    @media (max-width: 1100px) {
+      .carousel-card {
+        max-width: 430px;
+      }
+      .carousel-card[data-slot="left"] {
+        transform: translate3d(-96%, 14px, -100px) scale(0.82);
+      }
+      .carousel-card[data-slot="right"] {
+        transform: translate3d(-4%, 14px, -100px) scale(0.82);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .carousel-stage {
+        height: 530px;
+      }
+      .carousel-card {
+        max-width: 88%;
+        height: 500px;
+      }
+      .carousel-card[data-slot="left"] {
+        transform: translate3d(-64%, 16px, -90px) scale(0.85);
+        opacity: 0.38;
+      }
+      .carousel-card[data-slot="right"] {
+        transform: translate3d(-36%, 16px, -90px) scale(0.85);
+        opacity: 0.38;
+      }
+    }
+
+    /* Button Ripple Micro-interaction */
+    .ripple-effect {
+      position: absolute;
+      border-radius: 50%;
+      transform: scale(0);
+      animation: ripple-anim 600ms linear;
+      background-color: rgba(255, 255, 255, 0.35);
+      pointer-events: none;
+    }
+
+    @keyframes ripple-anim {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    /* Focus Ring for Accessibility */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 2.5px solid #00B8D9;
+      outline-offset: 3px;
+    }
+
+    /* Reduced Motion Support */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Print Stylesheet for 1-Page Executive Resume Export */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printable-resume-sheet,
+      #printable-resume-sheet * {
+        visibility: visible;
+      }
+      #printable-resume-sheet {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none !important;
+        border: none !important;
+        background: #FFFFFF !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
-<body>
-    <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
-    <header class="container">
-        <h1>Ghali Badawi</h1>
+<body class="ambient-canvas font-sans text-slate-900 antialiased selection:bg-cyan-200/60">
 
-        <figure class="profile-figure">
-            <img src="images/ghalibadawi.jpg" alt="Portrait of Ghali Badawi">
-            <figcaption class="tagline">
-                Mission: Build accessible, user-friendly web experiences
-            </figcaption>
-        </figure>
-    </header>
-    <nav class="container" aria-label="Primary">
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="goals.html">Goals</a></li>
-             <li><a href="projects.html">Projects</a></li>
-             <li><a href="skills.html">Skills</a></li>
-             <li><a href="about.html">Background</a></li>
-             <li><a href="resume.html">Resume</a></li>
-             <li><a href="contact.html">Contact</a></li>
+  <!-- Skip to Main Content for Screen Readers & Keyboard Users -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2.5 focus:bg-slate-900 focus:text-white focus:rounded-xl focus:shadow-lg focus:font-medium">
+    Skip to main content
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- STICKY GLASSMORPHIC NAVIGATION BAR                                    -->
+  <!-- Canonical Section Order Everywhere:                                   -->
+  <!-- Home -> About -> Projects -> Experience -> Education -> Skills -> Resume -> Contact -->
+  <!-- ===================================================================== -->
+  <header class="fixed top-0 inset-x-0 z-50 px-4 sm:px-6 lg:px-8 pt-3.5 transition-all duration-300 no-print" id="site-header">
+    <div class="max-w-7xl mx-auto">
+      <nav aria-label="Primary Navigation" class="glass-nav rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+        
+        <!-- Brand Identity (ghalibdw) -->
+        <a href="#home" class="group flex items-center gap-3 focus:outline-none" aria-label="Ghali Badawi Home">
+          <div class="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center font-display font-bold text-sm tracking-tight shadow-sm group-hover:bg-gradient-brand transition-all duration-300">
+            GB
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-sm sm:text-base tracking-tight text-slate-900 flex items-center gap-1.5">
+              Ghali Badawi
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-turquoise inline-block" aria-hidden="true"></span>
+            </span>
+            <span class="font-mono text-[11px] text-slate-500 tracking-wide">ghalibdw</span>
+          </div>
+        </a>
+
+        <!-- Desktop Horizontal Navigation Links (Canonical Order) -->
+        <ul class="hidden lg:flex items-center gap-1 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60" id="desktop-nav-links">
+          <li><a href="#home" data-nav="home" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-900 bg-white shadow-sm transition-all">Home</a></li>
+          <li><a href="#about" data-nav="about" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">About</a></li>
+          <li><a href="#projects" data-nav="projects" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Projects</a></li>
+          <li><a href="#experience" data-nav="experience" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Experience</a></li>
+          <li><a href="#education" data-nav="education" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Education</a></li>
+          <li><a href="#skills" data-nav="skills" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Skills</a></li>
+          <li><a href="#resume" data-nav="resume" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Resume</a></li>
+          <li><a href="#contact" data-nav="contact" class="nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Contact</a></li>
         </ul>
-    </nav>
 
-    <!-- The main element contains the unique, page-specific content. -->
-    <main id="main" class="container">
-        <section class="card" id="hero">
-            <h2>Welcome</h2>
-            <p>Hello! This is the home page for my portfolio website. In this page, you will find information about me, my personal projects, and how to get in touch.</p>
-            <h3>Basic Information</h3>
-            <dl>
-                <dt>Site</dt>
-                <dd>Portfolio</dd>
-            </dl>
-        </section>
-    </main>
-    <footer class="container footer-card">
-        <div class="footer-inner" aria-labelledby="footer-title">
-            <nav class="social-nav" aria-label="Social media">
-                <p class="newtab-group-note">(All social media links open in a new tab)</p>
-                
-            <ul class="social-list">
-                <li>
-                <a class="social-link" href="https://www.linkedin.com/in/ghalibadawi/" aria-label="LinkedIn" target="_blank" rel="noopener">
-                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM14.5 9c-2.37 0-3.5 1.31-3.5 2.23V9H7v12h4v-6.4c0-1.27.61-2.6 2.29-2.6 1.63 0 2.21 1.23 2.21 2.7V21h4v-6.93C19.5 10.7 17.77 9 15.6 9c-.55 0-1.09.09-1.6.26z"/>
-                    </svg>
-                </a>
-                </li>
+        <!-- Right Quick Actions -->
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="openResumeModal()" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200/90 shadow-sm transition-all" aria-label="Open Printable Resume">
+            <svg class="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Resume PDF</span>
+          </button>
 
-                <li>
-                <a class="social-link" href="https://www.facebook.com/badawighali" aria-label="Facebook" target="_blank" rel="noopener">
-                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M22 12.06C22 6.48 17.52 2 11.94 2 6.36 2 1.88 6.48 1.88 12.06c0 5.02 3.67 9.19 8.47 9.94v-7.02H7.9v-2.92h2.45V9.78c0-2.42 1.44-3.76 3.65-3.76 1.06 0 2.18.19 2.18.19v2.4h-1.23c-1.21 0-1.59.75-1.59 1.52v1.82h2.71l-.43 2.92h-2.28V22c4.8-.75 8.47-4.92 8.47-9.94z"/>
-                    </svg>
-                </a>
-                </li>
+          <a href="#contact" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold btn-primary-gradient shadow-sm">
+            <span>Contact</span>
+            <svg class="w-3.5 h-3.5 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
 
-                <li>
-                <a class="social-link" href="https://github.com/ghalibdw" aria-label="GitHub" target="_blank" rel="noopener">
-                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.26 3.41 9.72 8.15 11.3.6.12.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.31.73-4-1.6-4-1.6-.55-1.42-1.35-1.8-1.35-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.53 1.04.11-.8.42-1.35.77-1.66-2.64-.31-5.42-1.35-5.42-6a4.72 4.72 0 0 1 1.26-3.27 4.38 4.38 0 0 1 .12-3.23s1-.32 3.3 1.25a11.3 11.3 0 0 1 6 0c2.28-1.57 3.28-1.25 3.28-1.25.46 1.14.35 2.49.12 3.23a4.73 4.73 0 0 1 1.26 3.27c0 4.67-2.79 5.68-5.45 5.98.44.38.83 1.11.83 2.24 0 1.62-.02 2.93-.02 3.33 0 .32.22.7.83.58A11.51 11.51 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/>
-                    </svg>
-                </a>
-                </li>
-
-                <li>
-                <a class="social-link" href="https://www.instagram.com/badawighali/" aria-label="Instagram" target="_blank" rel="noopener">
-                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 .001 6.999A3.5 3.5 0 0 0 12 9.5zM18 6.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
-                    </svg>
-                </a>
-                </li>
-
-                <li>
-                <a class="social-link" href="https://x.com/ghalibdw" aria-label="X (Twitter)" target="_blank" rel="noopener">
-                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M18.9 2H21l-6.52 7.45L21.5 22h-4.93l-3.85-5.94L7.2 22H3l7.07-8.08L2.7 2h5.02l3.48 5.53L18.9 2zm-2.18 18h1.36L8.42 4H7.02l9.7 16z"/>
-                    </svg>
-                </a>
-                </li>
-            </ul>
-            </nav>
-
-            <h2 id="footer-title" class="sr-only">Website Information</h2>
-
-            <div class="footer-info">
-            <p>&copy; 2026 <span class="footer-name">Ghali Badawi</span></p>
-            <p>
-                Email Address :
-                <a class="footer-link" href="mailto:ghalibadawi08@gmail.com">ghalibadawi08@gmail.com</a>
-            </p>
-            </div>
+          <!-- Mobile / Tablet Minimalist Hamburger Button -->
+          <button type="button" id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-colors" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
         </div>
-    </footer>
+      </nav>
+
+      <!-- Mobile Navigation Drawer (Exact Canonical Order) -->
+      <div id="mobile-menu-drawer" class="hidden lg:hidden mt-2 glass-nav rounded-2xl p-4 shadow-xl border border-slate-200/80">
+        <div class="grid grid-cols-2 gap-2 text-sm font-medium">
+          <a href="#home" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl bg-slate-100/80 text-slate-900">1. Home</a>
+          <a href="#about" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">2. About</a>
+          <a href="#projects" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">3. Projects</a>
+          <a href="#experience" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">4. Experience</a>
+          <a href="#education" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">5. Education</a>
+          <a href="#skills" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">6. Skills</a>
+          <a href="#resume" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">7. Resume</a>
+          <a href="#contact" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-slate-700">8. Contact</a>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-200/70 flex items-center justify-between">
+          <button type="button" onclick="closeMobileMenu(); openResumeModal();" class="w-full py-2.5 rounded-xl text-xs font-semibold bg-slate-900 text-white flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            View &amp; Download Resume PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="relative">
+    <!-- Subtle Engineering Background Grid -->
+    <div class="bg-grid-pattern absolute inset-x-0 top-0 h-[880px] pointer-events-none -z-10" aria-hidden="true"></div>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 0: HOME / HERO (Name Left, Luminous Portrait Frame Right)   -->
+    <!-- =================================================================== -->
+    <section id="home" class="relative pt-28 sm:pt-36 pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column: Identity, Role Tags, Intro & CTAs -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Live Availability & Location Pill -->
+          <div class="inline-flex flex-wrap items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/95 border border-slate-200/90 shadow-sm">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="text-xs font-medium text-slate-700">Cupertino, CA &middot; De Anza College CE &rsquo;28</span>
+            <span class="hidden sm:inline text-slate-300">|</span>
+            <span class="text-xs font-mono font-semibold text-teal-600">Open to SWE &amp; AI Internships</span>
+          </div>
+
+          <!-- Prominent First & Last Name -->
+          <div class="space-y-2">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-slate-400">Computer Engineering &amp; Software Architecture</p>
+            <h1 class="font-display font-extrabold text-5xl sm:text-6xl lg:text-7xl tracking-tight text-slate-900 leading-[1.03]">
+              Ghali <span class="text-gradient-brand">Badawi</span>
+            </h1>
+          </div>
+
+          <!-- Role Badges (Computer Engineering Student, Software Developer, AI Enthusiast, Student Athlete) -->
+          <div class="flex flex-wrap items-center gap-2 pt-1" role="list" aria-label="Core Roles">
+            <span role="listitem" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-white shadow-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-turquoise"></span>
+              Computer Engineering Student
+            </span>
+            <span role="listitem" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-cyan-50/90 text-teal-800 border border-cyan-200/70">
+              Software Developer
+            </span>
+            <span role="listitem" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-blue-50/80 text-blue-800 border border-blue-200/60">
+              AI Enthusiast
+            </span>
+            <span role="listitem" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-emerald-50/80 text-emerald-800 border border-emerald-200/60">
+              Student Athlete
+            </span>
+          </div>
+
+          <!-- Short Introductory Paragraph -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+            I engineer accessible, high-precision software systems grounded in advanced mathematical physics and rigorous problem-solving. Having graduated in the <strong class="font-semibold text-slate-900">top 5% nationally</strong> with a <strong class="font-semibold text-slate-900">4.0 GPA</strong> in the French Baccalaureate (<em>Mention Tr&egrave;s Bien</em>, Advanced Mathematics &amp; Physics), I study Computer Engineering in Silicon Valley while competing as a collegiate midfielder for De Anza College.
+          </p>
+
+          <!-- Primary Call-To-Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <a href="#projects" class="ripple-btn inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl text-sm font-semibold btn-primary-gradient shadow-md">
+              <span>View Projects</span>
+              <svg class="w-4 h-4 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+
+            <button type="button" onclick="openResumeModal()" class="ripple-btn inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl text-sm font-semibold bg-white text-slate-800 hover:text-slate-950 border border-slate-200 hover:border-cyan-400/70 shadow-sm hover:shadow transition-all">
+              <svg class="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span>Download Resume</span>
+            </button>
+
+            <a href="#contact" class="ripple-btn inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl text-sm font-semibold bg-slate-100/90 hover:bg-slate-200/70 text-slate-700 hover:text-slate-900 transition-all">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Credential Strip -->
+          <div class="pt-4 border-t border-slate-200/70 grid grid-cols-3 gap-4 max-w-lg">
+            <div>
+              <div class="font-display font-bold text-xl sm:text-2xl text-slate-900">4.0 <span class="text-xs font-mono font-normal text-teal-600">GPA</span></div>
+              <div class="text-xs text-slate-500">Top 5% &middot; Mention Tr&egrave;s Bien</div>
+            </div>
+            <div>
+              <div class="font-display font-bold text-xl sm:text-2xl text-slate-900">750 <span class="text-xs font-mono font-normal text-blue-600">SAT Math</span></div>
+              <div class="text-xs text-slate-500">1430 Composite &middot; Olympiad</div>
+            </div>
+            <div>
+              <div class="font-display font-bold text-xl sm:text-2xl text-slate-900">4 <span class="text-xs font-mono font-normal text-emerald-600">Languages</span></div>
+              <div class="text-xs text-slate-500">FR &middot; AR &middot; EN &middot; ES</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Luminous Studio Portrait Frame (Upgraded to match light palette) -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md">
+            <!-- Soft Ambient Glow Behind Portrait -->
+            <div class="absolute -inset-3 rounded-[32px] bg-gradient-to-tr from-cyan-400/20 via-teal-300/15 to-blue-500/15 blur-2xl -z-10" aria-hidden="true"></div>
+
+            <!-- Main Portrait Card -->
+            <div class="premium-card rounded-[28px] p-4 sm:p-5 bg-white/95 border border-slate-200/90 relative overflow-hidden">
+              
+              <!-- Top Card Status Bar -->
+              <div class="flex items-center justify-between mb-3.5 px-1">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brand-turquoise"></span>
+                  <span class="font-mono text-[11px] font-medium text-slate-500">PORTRAIT // GHALI.BADAWI</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" onclick="triggerPortraitUpload()" class="text-[11px] font-mono font-medium px-2.5 py-1 rounded-lg bg-cyan-50 hover:bg-cyan-100 text-teal-800 border border-cyan-200/80 transition-colors" title="Upload your ghalibadawi.jpg portrait photo">
+                    + Set Photo
+                  </button>
+                  <button type="button" onclick="openSketchModal()" class="text-[11px] font-mono font-medium px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-blue-50 text-slate-600 hover:text-blue-700 border border-slate-200/80 transition-colors" title="Compare with original hand-drawn wireframe sketch">
+                    Sketch
+                  </button>
+                </div>
+              </div>
+
+              <!-- Portrait Visual Container (Light Pearl & Turquoise Studio Frame) -->
+              <figure class="relative aspect-[4/4.3] w-full rounded-2xl overflow-hidden bg-gradient-to-br from-slate-50 via-cyan-50/40 to-blue-50/50 border border-slate-200/80 flex flex-col justify-between p-6 group">
+                
+                <!-- Hidden File Input so Ghali can drop in ghalibadawi.jpg at any time -->
+                <input type="file" id="portrait-file-input" accept="image/*" class="hidden" onchange="handlePortraitFileSelect(event)" />
+
+                <!-- User Uploaded Portrait Image (Shown automatically if images/ghalibadawi.jpg exists or when selected) -->
+                <img
+                  id="hero-portrait-img"
+                  src="images/ghalibadawi.jpg"
+                  onload="this.classList.remove('hidden'); document.getElementById('hero-portrait-fallback').classList.add('opacity-0');"
+                  onerror="this.classList.add('hidden');"
+                  alt="Portrait of Ghali Badawi"
+                  class="hidden absolute inset-0 w-full h-full object-cover object-center z-10 transition-transform duration-700 group-hover:scale-105"
+                />
+
+                <!-- Stylized Light-Mode Executive Portrait Fallback -->
+                <div id="hero-portrait-fallback" class="relative z-0 flex flex-col h-full justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="px-2.5 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider bg-white/90 text-teal-700 shadow-sm border border-slate-200/80">
+                      Cupertino, CA &middot; 37.3230&deg; N
+                    </span>
+                    <span class="px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold bg-white/90 text-slate-700 border border-slate-200/80">
+                      AS-T CE &rsquo;28
+                    </span>
+                  </div>
+
+                  <!-- Stylized Architectural Portrait Medallion -->
+                  <div class="my-auto flex flex-col items-center text-center py-3">
+                    <div class="relative w-36 h-36 sm:w-40 sm:h-40 rounded-full p-1 bg-gradient-to-tr from-brand-turquoise via-brand-teal to-brand-blue shadow-xl flex items-center justify-center">
+                      <div class="w-full h-full rounded-full bg-white flex flex-col items-center justify-center relative overflow-hidden">
+                        <svg class="w-24 h-24 mt-3" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <circle cx="60" cy="42" r="21" stroke="url(#portraitGrad)" stroke-width="3.5" fill="rgba(0, 207, 200, 0.10)"/>
+                          <path d="M22 106C25 82 40 70 60 70C80 70 95 82 98 106" stroke="url(#portraitGrad)" stroke-width="3.5" stroke-linecap="round" fill="rgba(91, 141, 239, 0.10)"/>
+                          <defs>
+                            <linearGradient id="portraitGrad" x1="18" y1="18" x2="102" y2="106" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#00CFC8"/>
+                              <stop offset="0.5" stop-color="#00B8D9"/>
+                              <stop offset="1" stop-color="#5B8DEF"/>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <!-- Camera Upload Trigger Button -->
+                      <button type="button" onclick="triggerPortraitUpload()" class="absolute -bottom-1 -right-1 w-10 h-10 rounded-xl bg-slate-900 text-white shadow-lg border border-white flex items-center justify-center hover:scale-105 transition-transform" title="Click to load ghalibadawi.jpg">
+                        <svg class="w-5 h-5 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                      </button>
+                    </div>
+
+                    <h2 class="mt-4 font-display font-bold text-xl text-slate-900 tracking-tight">Ghali Badawi</h2>
+                    <p class="text-xs text-teal-700 font-semibold mt-0.5">Computer Engineering &amp; Collegiate Soccer</p>
+                    <button type="button" onclick="triggerPortraitUpload()" class="mt-2 text-[11px] font-mono text-slate-500 hover:text-teal-700 underline underline-offset-4">
+                      Click to attach images/ghalibadawi.jpg
+                    </button>
+                  </div>
+
+                  <!-- Bottom Portrait Caption Overlay -->
+                  <figcaption class="bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-xl p-3 text-left shadow-sm">
+                    <div class="flex items-center justify-between text-xs text-slate-900 font-semibold">
+                      <span>Engineering Mission</span>
+                      <span class="font-mono text-[10px] text-teal-600">WCAG 2.1 AA &middot; AI Systems</span>
+                    </div>
+                    <p class="text-xs text-slate-600 mt-1 leading-snug">
+                      &ldquo;Build accessible, user-friendly web &amp; AI experiences with mathematical precision.&rdquo;
+                    </p>
+                  </figcaption>
+                </div>
+              </figure>
+
+              <!-- Bottom Metadata Strip inside Portrait Card -->
+              <div class="mt-3.5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600 px-1">
+                <div class="flex items-center gap-2">
+                  <span class="font-semibold text-slate-900">De Anza College</span>
+                  <span>&middot;</span>
+                  <span>Men&rsquo;s Soccer Midfielder</span>
+                </div>
+                <a href="https://github.com/ghalibdw" target="_blank" rel="noopener" class="font-mono text-xs font-semibold text-slate-800 hover:text-teal-600 flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.26 3.41 9.72 8.15 11.3.6.12.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.31.73-4-1.6-4-1.6-.55-1.42-1.35-1.8-1.35-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.53 1.04.11-.8.42-1.35.77-1.66-2.64-.31-5.42-1.35-5.42-6a4.72 4.72 0 0 1 1.26-3.27 4.38 4.38 0 0 1 .12-3.23s1-.32 3.3 1.25a11.3 11.3 0 0 1 6 0c2.28-1.57 3.28-1.25 3.28-1.25.46 1.14.35 2.49.12 3.23a4.73 4.73 0 0 1 1.26 3.27c0 4.67-2.79 5.68-5.45 5.98.44.38.83 1.11.83 2.24 0 1.62-.02 2.93-.02 3.33 0 .32.22.7.83.58A11.51 11.51 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/></svg>
+                  <span>ghalibdw</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 1: ABOUT ME & UNIVERSITY TRANSFER TRACK (#about)            -->
+    <!-- Matches Navigation Position #2 (Home -> About -> Projects...)       -->
+    <!-- =================================================================== -->
+    <section id="about" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/70">
+      <div class="mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-xs font-mono font-semibold mb-3">
+          <span>01 // ABOUT &amp; ENGINEERING PHILOSOPHY</span>
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          About Me &amp; Academic Trajectory
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+          Bridging the analytical rigor of French mathematical physics with the tempo, resilience, and teamwork of collegiate soccer.
+        </p>
+      </div>
+
+      <!-- Bento Grid Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Story & Philosophy Card (7 cols) -->
+        <article class="lg:col-span-7 premium-card rounded-3xl p-7 sm:p-9 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-teal-600 uppercase tracking-wider">
+              <span>Personal Philosophy</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl sm:text-3xl text-slate-900 leading-snug">
+              &ldquo;Great engineering and championship soccer share the same foundation: spatial awareness, disciplined execution, and elevating everyone around you.&rdquo;
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Born and raised in Casablanca, Morocco, I completed the French Baccalaureate in Mathematics and Physics-Chemistry (with <em>Maths Expertes</em>) at <strong>Lyc&eacute;e Al Jabr</strong>, graduating with <strong>Mention Tr&egrave;s Bien (High Honors, 4.0 GPA)</strong> in the top 5% nationally and qualifying for the prestigious <em>Concours G&eacute;n&eacute;ral de Physique-Chimie</em>.
+            </p>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Today, as a Computer Engineering student and student-athlete at <strong>De Anza College</strong> in Cupertino, I channel that theoretical foundation into C++, Java, Python, and TypeScript—designing accessible, human-centered software systems.
+            </p>
+          </div>
+
+          <!-- Interactive Pillars Switcher -->
+          <div class="mt-8 pt-6 border-t border-slate-200/80">
+            <div class="flex flex-wrap gap-2 mb-4" role="tablist" aria-label="Personal Pillars">
+              <button type="button" onclick="selectAboutPillar('ai')" id="pillar-tab-ai" class="pillar-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 text-white transition-all">
+                AI &amp; Mathematical Systems
+              </button>
+              <button type="button" onclick="selectAboutPillar('ux')" id="pillar-tab-ux" class="pillar-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+                Accessible Web Architecture
+              </button>
+              <button type="button" onclick="selectAboutPillar('athlete')" id="pillar-tab-athlete" class="pillar-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
+                Athletic Captaincy
+              </button>
+            </div>
+            <p id="pillar-description" class="text-xs sm:text-sm text-slate-600 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 leading-relaxed">
+              Applying differential equations, linear algebra, and object-oriented C++/Python architecture to build intelligent algorithms, physics simulations, and data-driven matchmaking tools.
+            </p>
+          </div>
+        </article>
+
+        <!-- Right Column Bento Cards (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+          
+          <!-- Academic & Athletic Telemetry Card -->
+          <div class="premium-card rounded-3xl p-6 sm:p-7 bg-gradient-to-br from-white via-white to-cyan-50/40">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-xs font-semibold text-slate-500 uppercase">Verified Benchmarks</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-emerald-100 text-emerald-800 font-medium">2025 &ndash; 2026</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3.5">
+              <div class="p-3.5 rounded-2xl bg-slate-50/90 border border-slate-200/60">
+                <div class="font-display font-extrabold text-2xl text-slate-900">Top 5%</div>
+                <div class="text-xs font-semibold text-teal-700 mt-0.5">French Baccalaureate</div>
+                <div class="text-[11px] text-slate-500 mt-0.5">Mention Tr&egrave;s Bien &middot; 4.0 GPA</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-50/90 border border-slate-200/60">
+                <div class="font-display font-extrabold text-2xl text-slate-900">750</div>
+                <div class="text-xs font-semibold text-blue-700 mt-0.5">SAT Mathematics</div>
+                <div class="text-[11px] text-slate-500 mt-0.5">1430 Total &middot; Olympiad</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-50/90 border border-slate-200/60">
+                <div class="font-display font-extrabold text-2xl text-slate-900">XI</div>
+                <div class="text-xs font-semibold text-emerald-700 mt-0.5">Collegiate Midfielder</div>
+                <div class="text-[11px] text-slate-500 mt-0.5">Complexe Mohammed VI</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-50/90 border border-slate-200/60">
+                <div class="font-display font-extrabold text-2xl text-slate-900">100<span class="text-sm font-normal text-slate-400">/120</span></div>
+                <div class="text-xs font-semibold text-purple-700 mt-0.5">TOEFL iBT Score</div>
+                <div class="text-[11px] text-slate-500 mt-0.5">Quadrilingual (FR/AR/EN/ES)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elegant University Transfer Track Card (Stanford University, MIT, UC Berkeley) -->
+          <div class="premium-card rounded-3xl p-6 sm:p-7 bg-slate-900 text-white relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-brand-turquoise/15 blur-2xl pointer-events-none"></div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-mono text-[11px] text-cyan-300 uppercase tracking-widest font-semibold">Transfer Track &amp; Academic Horizon</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-white/10 text-slate-200">AS-T 2028</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-3.5">
+              Target Transfer Institutions (CS / CE / EECS)
+            </h3>
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between p-3 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400/40 transition-colors">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-xl bg-rose-500/20 border border-rose-400/30 text-rose-200 font-display font-bold text-xs flex items-center justify-center">SU</span>
+                  <div>
+                    <div class="text-xs sm:text-sm font-semibold text-white">Stanford University</div>
+                    <div class="text-[11px] text-slate-400">Computer Science &amp; Engineering</div>
+                  </div>
+                </div>
+                <span class="font-mono text-[10px] text-cyan-300">Stanford, CA</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400/40 transition-colors">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-xl bg-cyan-500/20 border border-cyan-400/30 text-cyan-200 font-display font-bold text-xs flex items-center justify-center">MIT</span>
+                  <div>
+                    <div class="text-xs sm:text-sm font-semibold text-white">Massachusetts Institute of Technology (MIT)</div>
+                    <div class="text-[11px] text-slate-400">Electrical Engineering &amp; Computer Science</div>
+                  </div>
+                </div>
+                <span class="font-mono text-[10px] text-cyan-300">Cambridge, MA</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400/40 transition-colors">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-xl bg-blue-500/20 border border-blue-400/30 text-blue-200 font-display font-bold text-xs flex items-center justify-center">UCB</span>
+                  <div>
+                    <div class="text-xs sm:text-sm font-semibold text-white">University of California, Berkeley</div>
+                    <div class="text-[11px] text-slate-400">Electrical Engineering &amp; Computer Sciences (EECS)</div>
+                  </div>
+                </div>
+                <span class="font-mono text-[10px] text-cyan-300">Berkeley, CA</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 2: PROJECTS — 3-CARD HORIZONTAL CAROUSEL (#projects)        -->
+    <!-- Fixed uniform height, crisp peripheral titles, and locked dots bar! -->
+    <!-- =================================================================== -->
+    <section id="projects" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50/80 border-y border-slate-200/70 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header + Controls -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200/80 text-teal-700 text-xs font-mono font-semibold mb-3">
+              <span>02 // SELECTED ENGINEERING WORK</span>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+              Featured Projects &amp; Systems
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+              Three projects remain simultaneously in view: the center project (<span class="font-mono text-xs text-teal-600 font-semibold">CLAIR</span>) is sharp and expanded, while peripheral projects (<span class="font-mono text-xs text-slate-500">FLOU</span>) keep their titles readable and smoothly focus when hovered or clicked.
+            </p>
+          </div>
+
+          <!-- Autoplay & Manual Arrow Controls -->
+          <div class="flex items-center gap-3 self-start md:self-end">
+            <button type="button" id="autoplay-toggle-btn" onclick="toggleCarouselAutoplay()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono font-medium bg-white border border-slate-200 text-slate-700 hover:border-cyan-400 transition-all shadow-sm" aria-label="Toggle Carousel Autoplay">
+              <span id="autoplay-dot" class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span id="autoplay-label">Autoplay: 4.0s</span>
+            </button>
+
+            <div class="inline-flex items-center rounded-xl bg-white border border-slate-200 p-1 shadow-sm">
+              <button type="button" onclick="stepCarousel(-1)" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" aria-label="Previous Project">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button type="button" onclick="stepCarousel(1)" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" aria-label="Next Project">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Card Spatial Horizontal Carousel Stage (Fixed 525px height, cards 495px height) -->
+        <div
+          id="projects-carousel-stage"
+          class="carousel-stage"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Featured Engineering Projects"
+          tabindex="0"
+        >
+          <!-- Cards dynamically rendered by JS -->
+        </div>
+
+        <!-- Always-Visible Elevated Navigation Dots Pill Below Carousel (z-40, never overlapped) -->
+        <div class="relative z-40 mt-6 flex flex-col items-center gap-3">
+          <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white border border-slate-200/90 shadow-md">
+            <button type="button" onclick="stepCarousel(-1)" class="text-slate-400 hover:text-slate-800 transition-colors" aria-label="Previous slide">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <div id="carousel-dots" class="flex items-center gap-2.5 px-1" role="tablist" aria-label="Select Project Slide">
+              <!-- Populated by JS -->
+            </div>
+            <button type="button" onclick="stepCarousel(1)" class="text-slate-400 hover:text-slate-800 transition-colors" aria-label="Next slide">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+          <p id="carousel-status-caption" class="font-mono text-xs text-slate-500 text-center">
+            Showing 1 of 4 &middot; Hover side cards to focus or drag horizontally
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 3: EXPERIENCE & LEADERSHIP (#experience)                    -->
+    <!-- =================================================================== -->
+    <section id="experience" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-700 text-xs font-mono font-semibold mb-3">
+          <span>03 // EXPERIENCE, ATHLETICS &amp; LEADERSHIP</span>
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          Experience &amp; Leadership Trajectory
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+          From commercial operations and consumer data analysis to national-level soccer training and civic leadership.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Left: Professional & Operational Experience -->
+        <div class="lg:col-span-6 space-y-6">
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-teal"></span>
+            Industry &amp; Engineering Experience
+          </h3>
+
+          <!-- Experience Item 1: MatchUp Creator -->
+          <article class="premium-card rounded-3xl p-6 sm:p-7 relative border-l-4 border-l-brand-blue">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-blue-50 text-blue-800 border border-blue-200/70">
+                2025 &ndash; Present
+              </span>
+              <span class="text-xs font-mono text-slate-500">Cupertino, CA</span>
+            </div>
+            <h4 class="font-display font-bold text-xl text-slate-900">Creator &amp; Lead Software Developer</h4>
+            <p class="text-sm font-semibold text-blue-700 mb-3">MatchUp &middot; Cross-Platform Pickup Soccer Platform</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-blue font-bold">&rarr;</span>
+                <span><strong>Full-Stack Architecture:</strong> Designed and built a cross-platform mobile matchmaking application in TypeScript, Python, and JavaScript connecting local amateur soccer players.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-blue font-bold">&rarr;</span>
+                <span><strong>Algorithmic Lobby Balancing:</strong> Created position-aware roster balancing and real-time pitch check-in workflows inspired by collegiate soccer logistics.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Experience Item 2: Le Panier du Fermier -->
+          <article class="premium-card rounded-3xl p-6 sm:p-7 relative border-l-4 border-l-brand-teal">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-50 text-teal-800 border border-cyan-200/70">
+                Mar 2022 &ndash; Apr 2022
+              </span>
+              <span class="text-xs font-mono text-slate-500">Casablanca, Morocco</span>
+            </div>
+            <h4 class="font-display font-bold text-xl text-slate-900">Retail Management &amp; Analytics Intern</h4>
+            <p class="text-sm font-semibold text-teal-700 mb-3">Le Panier du Fermier &middot; Artisanal Gastronomy &amp; Retail</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-teal font-bold">&rarr;</span>
+                <span><strong>Data Analysis &amp; Revenue Growth:</strong> Evaluated daily sales metrics to uncover consumer purchasing trends, informing targeted promotions that increased foot traffic and revenue.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-teal font-bold">&rarr;</span>
+                <span><strong>Inventory Optimization:</strong> Engineered a systematic SKU arrangement for temperature-sensitive artisanal imports, cutting retrieval friction and improving stock rotation.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-teal font-bold">&rarr;</span>
+                <span><strong>Digital Brand &amp; Visual Merchandising:</strong> Directed social media engagement campaigns and redesigned in-store product presentation to strengthen brand recall.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Right: Collegiate Athletics & Community Leadership -->
+        <div class="lg:col-span-6 space-y-6">
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Collegiate Athletics &amp; Civic Leadership
+          </h3>
+
+          <!-- Athletics Card -->
+          <article class="premium-card rounded-3xl p-6 sm:p-7 relative border-l-4 border-l-emerald-500">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                Collegiate &amp; National Selection
+              </span>
+              <span class="text-xs font-mono text-slate-500">Cupertino &amp; Morocco</span>
+            </div>
+            <h4 class="font-display font-bold text-xl text-slate-900">Student-Athlete, Team Captain &amp; Midfielder</h4>
+            <p class="text-sm font-semibold text-emerald-700 mb-3">De Anza College Men&rsquo;s Soccer &amp; Complexe Mohammed VI de Football</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">&rarr;</span>
+                <span><strong>Complexe Mohammed VI de Football Selection:</strong> Selected for high-intensity training under Youth National Team and professional coaches, specializing in tactical video analysis and conditioning.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">&rarr;</span>
+                <span><strong>Championship Captaincy:</strong> Captained school and club squads to a league championship and regional semi-finals, earning multiple <em>Man of the Match</em> honors.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">&rarr;</span>
+                <span><strong>National Cross-Country Competitor:</strong> Balanced double-session training routines alongside a 4.0 academic workload.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Community & Volunteering Card -->
+          <article class="premium-card rounded-3xl p-6 sm:p-7 relative border-l-4 border-l-purple-500">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-purple-50 text-purple-800 border border-purple-200/70">
+                Community Impact
+              </span>
+              <span class="text-xs font-mono text-slate-500">Casablanca, Morocco</span>
+            </div>
+            <h4 class="font-display font-bold text-xl text-slate-900">Cultural Mediator, Eco-Delegate &amp; Volunteer Leader</h4>
+            <p class="text-sm font-semibold text-purple-700 mb-3">Patrimoine Association &middot; Patte sur mon C&oelig;ur &middot; Campus Sustainability</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">&rarr;</span>
+                <span><strong>Historical Tour Guide (&ldquo;Patrimoine&rdquo;):</strong> Completed a year-long cultural mediation certification and led architectural history tours of Casablanca for K&ndash;12 students.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">&rarr;</span>
+                <span><strong>Animal Welfare Leader (&ldquo;Patte sur mon C&oelig;ur&rdquo;):</strong> Organized vaccination, sterilization, and community adoption campaigns for stray animals.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">&rarr;</span>
+                <span><strong>Campus Eco-Delegate:</strong> Directed school-wide recycling and waste-reduction initiatives.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 4: EDUCATION & ACADEMIC HONORS (#education)                 -->
+    <!-- =================================================================== -->
+    <section id="education" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-t border-slate-200/70">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200/80 text-teal-700 text-xs font-mono font-semibold mb-3">
+            <span>04 // ACADEMIC FOUNDATION &amp; HONORS</span>
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            Education &amp; Scientific Honors
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+            Rigorous training in computer engineering, object-oriented programming, differential equations, and physical sciences.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- De Anza College Card -->
+          <article class="premium-card rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-900 text-white">
+                  2025 &ndash; Expected June 2028
+                </span>
+                <span class="text-xs font-mono font-semibold text-teal-600">Cupertino, California, USA</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-slate-900">De Anza College</h3>
+              <p class="text-base font-semibold text-teal-700 mt-1">
+                Associate in Science for Transfer (AS-T) in Computer Engineering
+              </p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                Completing lower-division Computer Engineering and Computer Science coursework in Silicon Valley while competing on the intercollegiate Men&rsquo;s Soccer roster.
+              </p>
+
+              <div class="mt-5">
+                <h4 class="font-mono text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2.5">Relevant Coursework</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Object-Oriented Programming (C++)</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Java Fundamentals</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Multivariable Calculus</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Engineering Physics</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Accessible Web Design</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-200/70">
+              <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">Target Transfer Destinations</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-cyan-50 text-teal-900 border border-cyan-200/80">Stanford University</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200/80">Massachusetts Institute of Technology (MIT)</span>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200/80">University of California, Berkeley</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lycée Al Jabr Card -->
+          <article class="premium-card rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-50 text-teal-800 border border-cyan-200">
+                  Graduated July 2025 &middot; Cumulative GPA: 4.0
+                </span>
+                <span class="text-xs font-mono font-semibold text-slate-500">Casablanca, Morocco</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-slate-900">Lyc&eacute;e Al Jabr</h3>
+              <p class="text-base font-semibold text-blue-700 mt-1">
+                French Baccalaureate (Mention Tr&egrave;s Bien / High Honors) &mdash; Top 5% National Scale
+              </p>
+              <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                Specialization in <strong>Mathematics &amp; Physics-Chemistry</strong> with <strong>Advanced Mathematics (Maths Expertes)</strong>. Qualified for the national <em>Concours G&eacute;n&eacute;ral de Physique-Chimie</em> and competed in the <em>National Math Olympiads</em>.
+              </p>
+
+              <div class="mt-5">
+                <h4 class="font-mono text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2.5">Advanced Scientific Curriculum</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Differential Equations</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Probability &amp; Statistics</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Classical Mechanics</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Thermodynamics</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Electricity &amp; Magnetism</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">Organic Chemistry</span>
+                  <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-slate-800">French Philosophy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-200/70 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
+              <span class="font-semibold text-slate-900">Honors: Concours G&eacute;n&eacute;ral &amp; Math Olympiad</span>
+              <span class="px-2.5 py-1 rounded-lg font-mono text-blue-800 bg-blue-50 border border-blue-200 font-semibold">SAT: 1430 (750 Math)</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 5: SKILLS & TECHNOLOGIES (#skills)                          -->
+    <!-- =================================================================== -->
+    <section id="skills" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/70">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-200/80 text-purple-700 text-xs font-mono font-semibold mb-3">
+            <span>05 // TECHNICAL &amp; SCIENTIFIC STACK</span>
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            Skills, Languages &amp; Tooling
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+            Organized into structured domain cards and clean tags for rapid engineering evaluation.
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-1.5 bg-slate-100/90 p-1.5 rounded-2xl border border-slate-200/80" role="tablist" aria-label="Filter Skills by Domain">
+          <button type="button" onclick="filterSkills('all')" data-skill-btn="all" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 text-white shadow-sm transition-all">All Domains</button>
+          <button type="button" onclick="filterSkills('programming')" data-skill-btn="programming" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Programming</button>
+          <button type="button" onclick="filterSkills('web')" data-skill-btn="web" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Web &amp; UX</button>
+          <button type="button" onclick="filterSkills('tools')" data-skill-btn="tools" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Tools &amp; Math</button>
+          <button type="button" onclick="filterSkills('languages')" data-skill-btn="languages" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium text-slate-600 hover:text-slate-900 transition-all">Human Languages</button>
+        </div>
+      </div>
+
+      <!-- 4 Grouped Skill Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="skills-grid">
+        
+        <!-- Group 1: Programming Languages -->
+        <article data-skill-group="programming" class="skill-card premium-card rounded-3xl p-7 transition-all duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-2xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-teal-600 font-mono font-bold text-sm">
+                { }
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-slate-900">Programming Languages</h3>
+                <p class="text-xs text-slate-500">Systems, OOP, scripting &amp; type-safe development</p>
+              </div>
+            </div>
+            <span class="font-mono text-xs text-teal-600 font-semibold">Core</span>
+          </div>
+          <div class="flex flex-wrap gap-2.5 pt-2">
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-white shadow-sm">C++ (OOP)</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-white shadow-sm">Python</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 text-white shadow-sm">Java</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-cyan-50 text-teal-900 border border-cyan-200">TypeScript</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-cyan-50 text-teal-900 border border-cyan-200">JavaScript (ES6+)</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">HTML5</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">CSS3</span>
+          </div>
+        </article>
+
+        <!-- Group 2: Web Technologies & Frameworks -->
+        <article data-skill-group="web" class="skill-card premium-card rounded-3xl p-7 transition-all duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-mono font-bold text-sm">
+                UI
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-slate-900">Technologies &amp; Web Architecture</h3>
+                <p class="text-xs text-slate-500">Accessible interfaces, responsive systems &amp; modern stack</p>
+              </div>
+            </div>
+            <span class="font-mono text-xs text-blue-600 font-semibold">Frontend / Full-Stack</span>
+          </div>
+          <div class="flex flex-wrap gap-2.5 pt-2">
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-blue-50 text-blue-900 border border-blue-200">React</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-blue-50 text-blue-900 border border-blue-200">Node.js</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-800">WCAG 2.1 AA Accessibility</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Semantic DOM Design</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Responsive Grid / Flexbox</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Cross-Platform Mobile UI</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Interactive Canvas / SVG</span>
+          </div>
+        </article>
+
+        <!-- Group 3: Developer Tools, Math & Physics -->
+        <article data-skill-group="tools" class="skill-card premium-card rounded-3xl p-7 transition-all duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 font-mono font-bold text-sm">
+                &Sigma;
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-slate-900">Developer Tools &amp; Quantitative Sciences</h3>
+                <p class="text-xs text-slate-500">Version control, Unix workflows &amp; mathematical modeling</p>
+              </div>
+            </div>
+            <span class="font-mono text-xs text-emerald-600 font-semibold">Engineering</span>
+          </div>
+          <div class="flex flex-wrap gap-2.5 pt-2">
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200">Git &amp; GitHub</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200">VS Code</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200">Linux / CLI</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Differential Equations</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Classical Mechanics</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Probability &amp; Statistics</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">PIX Digital Certification</span>
+          </div>
+        </article>
+
+        <!-- Group 4: Spoken Languages & Standardized Benchmarks -->
+        <article data-skill-group="languages" class="skill-card premium-card rounded-3xl p-7 transition-all duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-2xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-600 font-mono font-bold text-sm">
+                4x
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg text-slate-900">Spoken Languages &amp; Test Benchmarks</h3>
+                <p class="text-xs text-slate-500">Global communication across 4 languages</p>
+              </div>
+            </div>
+            <span class="font-mono text-xs text-purple-600 font-semibold">Quadrilingual</span>
+          </div>
+          <div class="flex flex-wrap gap-2.5 pt-2">
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-purple-50 text-purple-900 border border-purple-200">French (Native)</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-purple-50 text-purple-900 border border-purple-200">Arabic (Native)</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-purple-50 text-purple-900 border border-purple-200">English (Proficient &middot; TOEFL 100/120)</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">Spanish (Conversational &middot; DELE A2)</span>
+            <span class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 text-slate-800">SAT 1430 (750 Math)</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 6: INTERACTIVE RESUME TIMELINE (#resume)                    -->
+    <!-- =================================================================== -->
+    <section id="resume" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50/70 border-t border-slate-200/70">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200/80 text-teal-700 text-xs font-mono font-semibold mb-3">
+              <span>06 // CURRICULUM VITAE &amp; CHRONOLOGY</span>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+              Interactive Resume Timeline
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+              Filter milestones by category to skim rapidly, or open the formatted 1-page executive sheet to print or save as PDF.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <button type="button" onclick="openResumeModal()" class="ripple-btn inline-flex items-center gap-2 px-5 py-3 rounded-2xl text-xs sm:text-sm font-semibold btn-primary-gradient shadow-md">
+              <svg class="w-4 h-4 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Download / Print Resume</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter Pills for Timeline -->
+        <div class="flex flex-wrap gap-2 mb-10" role="tablist" aria-label="Filter Resume Timeline">
+          <button type="button" onclick="filterTimeline('all')" data-tl-btn="all" class="tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-white shadow-sm transition-all">All Milestones (8)</button>
+          <button type="button" onclick="filterTimeline('education')" data-tl-btn="education" class="tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">Education</button>
+          <button type="button" onclick="filterTimeline('experience')" data-tl-btn="experience" class="tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">Experience &amp; Projects</button>
+          <button type="button" onclick="filterTimeline('athletics')" data-tl-btn="athletics" class="tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">Athletics</button>
+          <button type="button" onclick="filterTimeline('honors')" data-tl-btn="honors" class="tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">Awards &amp; Leadership</button>
+        </div>
+
+        <!-- Vertical Architectural Timeline -->
+        <div class="relative pl-6 sm:pl-10 border-l-2 border-slate-200 space-y-6" id="resume-timeline-list">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SECTION 7: CONTACT SECTION (#contact)                               -->
+    <!-- WhatsApp with official logo + Official Social Icons + ghalibdw      -->
+    <!-- =================================================================== -->
+    <section id="contact" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/80">
+      <div class="mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-200/80 text-teal-700 text-xs font-mono font-semibold mb-3">
+          <span>07 // INITIATE CONNECTION</span>
+        </div>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          Contact Me
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+          Reach out regarding software engineering internships, research collaborations, university transfer inquiries, or project opportunities.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Direct Contact Form -->
+        <div class="lg:col-span-7 premium-card rounded-3xl p-7 sm:p-10 bg-white">
+          <div class="flex items-center justify-between pb-5 mb-6 border-b border-slate-100">
+            <div>
+              <h3 class="font-display font-bold text-xl text-slate-900">Send a Direct Message</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Direct dispatch to <span class="font-mono text-teal-700">ghalibadawi08@gmail.com</span></p>
+            </div>
+            <span class="px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+              Replies within 24h
+            </span>
+          </div>
+
+          <form id="portfolio-contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4" novalidate>
+            <!-- First Name & Last Name Side-by-Side per Sketch (FN / LN) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-fn" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                  First Name <span class="text-teal-600">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="contact-fn"
+                  name="firstName"
+                  required
+                  placeholder="e.g. Sarah"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-brand-teal transition-all"
+                />
+              </div>
+              <div>
+                <label for="contact-ln" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                  Last Name <span class="text-teal-600">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="contact-ln"
+                  name="lastName"
+                  required
+                  placeholder="e.g. Chen"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-brand-teal transition-all"
+                />
+              </div>
+            </div>
+
+            <!-- Email & WhatsApp Number -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                  Email Address <span class="text-teal-600">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  placeholder="name@company.com"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-brand-teal transition-all"
+                />
+              </div>
+              <div>
+                <label for="contact-phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                  WhatsApp / Phone <span class="text-slate-400 font-normal">(Optional)</span>
+                </label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  placeholder="+1 (650) 555-0199"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-brand-teal transition-all"
+                />
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div>
+              <label for="contact-subject" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                Subject <span class="text-teal-600">*</span>
+              </label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                required
+                placeholder="Software Engineering Internship / Research Collaboration / Project Inquiry"
+                class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-brand-teal transition-all"
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="contact-message" class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1.5">
+                Message <span class="text-teal-600">*</span>
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Hi Ghali, I reviewed your portfolio and would love to connect regarding..."
+                class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-brand-teal transition-all resize-y"
+              ></textarea>
+            </div>
+
+            <!-- Submit Row -->
+            <div class="pt-2 flex flex-wrap items-center justify-between gap-4">
+              <button type="submit" class="ripple-btn inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-sm font-semibold btn-primary-gradient shadow-md">
+                <span>Send Message</span>
+                <svg class="w-4 h-4 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              </button>
+              <span id="contact-form-feedback" class="text-xs font-medium text-slate-500">
+                All fields marked with * are required.
+              </span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Column: Direct Coordinates (WhatsApp, Email, Location) & Official Icon + Username Social Grid -->
+        <div class="lg:col-span-5 space-y-5">
+          
+          <!-- Direct Coordinates Card -->
+          <div class="premium-card rounded-3xl p-6 sm:p-7 bg-white space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-display font-bold text-lg text-slate-900">Direct Coordinates</h3>
+              <button type="button" onclick="openResumeModal()" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-semibold bg-slate-900 text-white hover:bg-slate-800 transition-colors">
+                <svg class="w-3.5 h-3.5 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Resume PDF Sheet</span>
+              </button>
+            </div>
+
+            <div class="space-y-3 text-sm">
+              <!-- Email with 1-Click Copy -->
+              <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-9 h-9 rounded-xl bg-cyan-50 border border-cyan-200 text-teal-700 flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="text-[11px] font-mono uppercase text-slate-400">Email</div>
+                    <a href="mailto:ghalibadawi08@gmail.com" class="font-medium text-slate-900 hover:text-teal-600 truncate block">
+                      ghalibadawi08@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button type="button" onclick="copyTextToClipboard('ghalibadawi08@gmail.com', 'Email address copied!')" class="px-2.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-white border border-slate-200 text-slate-700 hover:border-cyan-400 transition-colors shrink-0">
+                  Copy
+                </button>
+              </div>
+
+              <!-- WhatsApp with Official Logo + Click-to-Chat + Copy -->
+              <div class="flex items-center justify-between p-3.5 rounded-2xl bg-emerald-50/50 border border-emerald-200/80">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-9 h-9 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+                    <!-- Official WhatsApp Logo SVG -->
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36.19 0 .39.01.56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.65-.15.27.1 1.7.8 1.99.95.29.15.48.22.56.34.07.12.07.7-.17 1.38z"/>
+                    </svg>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="text-[11px] font-mono uppercase text-emerald-700 font-semibold">WhatsApp</div>
+                    <a href="https://wa.me/13347104645" target="_blank" rel="noopener" class="font-semibold text-slate-900 hover:text-emerald-700 truncate block">
+                      +1 (334) 710-4645
+                    </a>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1.5 shrink-0">
+                  <a href="https://wa.me/13347104645" target="_blank" rel="noopener" class="px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors">
+                    Chat
+                  </a>
+                  <button type="button" onclick="copyTextToClipboard('+13347104645', 'WhatsApp number copied!')" class="px-2.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-white border border-emerald-200 text-slate-700 hover:border-emerald-400 transition-colors">
+                    Copy
+                  </button>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70">
+                <div>
+                  <div class="text-[11px] font-mono uppercase text-slate-400">Location &amp; Campus</div>
+                  <div class="font-medium text-slate-900">Cupertino, California, USA &middot; De Anza College</div>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg text-[11px] font-mono bg-cyan-50 text-teal-700 font-semibold">Silicon Valley</span>
+              </div>
+
+              <!-- Official Social Channels (Official Icon + Username Next to Each Icon — No Raw URLs) -->
+              <div class="pt-2">
+                <div class="text-[11px] font-mono uppercase text-slate-400 mb-2.5">Official Profiles &amp; Handle (@ghalibdw)</div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  <a href="https://github.com/ghalibdw" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 hover:bg-slate-900 hover:text-white border border-slate-200/80 text-slate-800 transition-all group">
+                    <svg class="w-4 h-4 fill-current shrink-0 text-slate-700 group-hover:text-brand-turquoise" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.26 3.41 9.72 8.15 11.3.6.12.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.31.73-4-1.6-4-1.6-.55-1.42-1.35-1.8-1.35-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.53 1.04.11-.8.42-1.35.77-1.66-2.64-.31-5.42-1.35-5.42-6a4.72 4.72 0 0 1 1.26-3.27 4.38 4.38 0 0 1 .12-3.23s1-.32 3.3 1.25a11.3 11.3 0 0 1 6 0c2.28-1.57 3.28-1.25 3.28-1.25.46 1.14.35 2.49.12 3.23a4.73 4.73 0 0 1 1.26 3.27c0 4.67-2.79 5.68-5.45 5.98.44.38.83 1.11.83 2.24 0 1.62-.02 2.93-.02 3.33 0 .32.22.7.83.58A11.51 11.51 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/></svg>
+                    <span class="font-mono text-xs font-semibold truncate">ghalibdw</span>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/ghalibadawi/" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 hover:bg-[#0A66C2] hover:text-white border border-slate-200/80 text-slate-800 transition-all group">
+                    <svg class="w-4 h-4 fill-current shrink-0 text-[#0A66C2] group-hover:text-white" viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM14.5 9c-2.37 0-3.5 1.31-3.5 2.23V9H7v12h4v-6.4c0-1.27.61-2.6 2.29-2.6 1.63 0 2.21 1.23 2.21 2.7V21h4v-6.93C19.5 10.7 17.77 9 15.6 9c-.55 0-1.09.09-1.6.26z"/></svg>
+                    <span class="font-mono text-xs font-semibold truncate">ghalibdw</span>
+                  </a>
+
+                  <a href="https://www.instagram.com/badawighali/" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 hover:bg-pink-600 hover:text-white border border-slate-200/80 text-slate-800 transition-all group">
+                    <svg class="w-4 h-4 fill-current shrink-0 text-pink-600 group-hover:text-white" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 .001 6.999A3.5 3.5 0 0 0 12 9.5zM18 6.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/></svg>
+                    <span class="font-mono text-xs font-semibold truncate">ghalibdw</span>
+                  </a>
+
+                  <a href="https://www.tiktok.com/@ghalibdw" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 hover:bg-slate-900 hover:text-white border border-slate-200/80 text-slate-800 transition-all group">
+                    <svg class="w-4 h-4 fill-current shrink-0 text-slate-800 group-hover:text-brand-turquoise" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                    <span class="font-mono text-xs font-semibold truncate">ghalibdw</span>
+                  </a>
+
+                  <a href="https://www.youtube.com/@ghalibdw" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 hover:bg-red-600 hover:text-white border border-slate-200/80 text-slate-800 transition-all group">
+                    <svg class="w-4 h-4 fill-current shrink-0 text-red-600 group-hover:text-white" viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+                    <span class="font-mono text-xs font-semibold truncate">ghalibdw</span>
+                  </a>
+
+                  <a href="https://www.facebook.com/badawighali" target="_blank" rel="noopener" class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-50 hover:bg-[#1877F2] hover:text-white border border-slate-200/80 text-slate-800 transition-all group">
+                    <svg class="w-4 h-4 fill-current shrink-0 text-[#1877F2] group-hover:text-white" viewBox="0 0 24 24"><path d="M22 12.06C22 6.48 17.52 2 11.94 2 6.36 2 1.88 6.48 1.88 12.06c0 5.02 3.67 9.19 8.47 9.94v-7.02H7.9v-2.92h2.45V9.78c0-2.42 1.44-3.76 3.65-3.76 1.06 0 2.18.19 2.18.19v2.4h-1.23c-1.21 0-1.59.75-1.59 1.52v1.82h2.71l-.43 2.92h-2.28V22c4.8-.75 8.47-4.92 8.47-9.94z"/></svg>
+                    <span class="font-mono text-xs font-semibold truncate">ghalibdw</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Cupertino / De Anza College Map Card -->
+          <div class="premium-card rounded-3xl p-4 bg-white overflow-hidden">
+            <div class="flex items-center justify-between px-2 pb-3">
+              <span class="text-xs font-semibold text-slate-700">De Anza College &middot; Cupertino, Silicon Valley</span>
+              <a href="https://maps.google.com/?q=De+Anza+College+Cupertino+CA" target="_blank" rel="noopener" class="text-xs font-mono text-teal-600 hover:underline">
+                Open Map &nearr;
+              </a>
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-slate-200 h-44 bg-slate-100">
+              <iframe
+                title="Map of De Anza College in Cupertino, California"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23003.882690969072!2d-122.049641!3d37.32002775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb44e1fd9707f%3A0x560f5c85bd9f1512!2sDe%20Anza%20College!5e1!3m2!1sen!2sus!4v1790489339986!5m2!1sen!2sus"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- PROFESSIONAL FOOTER (Balanced Spacing, Official Icons + ghalibdw)     -->
+  <!-- ===================================================================== -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800 no-print">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- Top Tier: Brand, Canonical Navigation & Governance -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-slate-800/90">
+        
+        <!-- Left Brand Column: ghalibdw -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-brand text-slate-950 flex items-center justify-center font-display font-extrabold text-base shadow-md">
+              GB
+            </div>
+            <div>
+              <span class="font-display font-bold text-xl text-white tracking-tight block">ghalibdw</span>
+              <span class="font-mono text-xs text-cyan-400">Ghali Badawi &middot; Engineering Portfolio</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+            Computer Engineering student at De Anza College, software developer, AI enthusiast, and collegiate soccer midfielder building timeless, accessible digital products in Cupertino, CA.
+          </p>
+          <div class="flex flex-wrap items-center gap-3 pt-1 text-xs font-mono text-slate-300">
+            <a href="mailto:ghalibadawi08@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:text-cyan-300 transition-all">
+              <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>ghalibadawi08@gmail.com</span>
+            </a>
+            <a href="https://wa.me/13347104645" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:text-emerald-300 transition-all">
+              <svg class="w-3.5 h-3.5 fill-current text-emerald-400" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36.19 0 .39.01.56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.65-.15.27.1 1.7.8 1.99.95.29.15.48.22.56.34.07.12.07.7-.17 1.38z"/></svg>
+              <span>WhatsApp: +1 (334) 710-4645</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Navigation Column (Exact Canonical Order) -->
+        <div class="md:col-span-3 space-y-3">
+          <h2 class="font-mono text-xs font-semibold uppercase tracking-wider text-slate-400">Section Directory</h2>
+          <ul class="grid grid-cols-2 gap-y-2.5 gap-x-4 text-xs sm:text-sm text-slate-300">
+            <li><a href="#home" class="hover:text-cyan-300 transition-colors">1. Home</a></li>
+            <li><a href="#about" class="hover:text-cyan-300 transition-colors">2. About</a></li>
+            <li><a href="#projects" class="hover:text-cyan-300 transition-colors">3. Projects</a></li>
+            <li><a href="#experience" class="hover:text-cyan-300 transition-colors">4. Experience</a></li>
+            <li><a href="#education" class="hover:text-cyan-300 transition-colors">5. Education</a></li>
+            <li><a href="#skills" class="hover:text-cyan-300 transition-colors">6. Skills</a></li>
+            <li><a href="#resume" class="hover:text-cyan-300 transition-colors">7. Resume</a></li>
+            <li><a href="#contact" class="hover:text-cyan-300 transition-colors">8. Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Governance & Academic Horizon Column -->
+        <div class="md:col-span-4 space-y-4">
+          <h2 class="font-mono text-xs font-semibold uppercase tracking-wider text-slate-400">Legal &amp; Governance</h2>
+          <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-slate-300">
+            <button type="button" onclick="openLegalModal('privacy')" class="hover:text-cyan-300 underline underline-offset-4 transition-colors">Privacy Policy</button>
+            <button type="button" onclick="openLegalModal('cookies')" class="hover:text-cyan-300 underline underline-offset-4 transition-colors">Cookie Settings</button>
+            <button type="button" onclick="openLegalModal('terms')" class="hover:text-cyan-300 underline underline-offset-4 transition-colors">Terms of Use / User Agreement</button>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800/90 text-xs text-slate-400 space-y-1">
+            <div class="font-mono text-[10px] uppercase tracking-wider text-cyan-400">Transfer Horizon</div>
+            <div class="text-slate-200 font-medium">Stanford University &middot; MIT &middot; UC Berkeley</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Tier: Generously Spaced Official Social Showcase Bar (Official Icon + ghalibdw) -->
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-mono text-xs uppercase tracking-wider text-slate-400">Official Profiles &amp; Channels</span>
+          <span class="font-mono text-xs text-cyan-400">@ghalibdw</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-9 gap-3.5">
+          <!-- 1. GitHub -->
+          <a href="https://github.com/ghalibdw" target="_blank" rel="noopener" aria-label="GitHub ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-cyan-400" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.26 3.41 9.72 8.15 11.3.6.12.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.31.73-4-1.6-4-1.6-.55-1.42-1.35-1.8-1.35-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.53 1.04.11-.8.42-1.35.77-1.66-2.64-.31-5.42-1.35-5.42-6a4.72 4.72 0 0 1 1.26-3.27 4.38 4.38 0 0 1 .12-3.23s1-.32 3.3 1.25a11.3 11.3 0 0 1 6 0c2.28-1.57 3.28-1.25 3.28-1.25.46 1.14.35 2.49.12 3.23a4.73 4.73 0 0 1 1.26 3.27c0 4.67-2.79 5.68-5.45 5.98.44.38.83 1.11.83 2.24 0 1.62-.02 2.93-.02 3.33 0 .32.22.7.83.58A11.51 11.51 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 2. LinkedIn -->
+          <a href="https://www.linkedin.com/in/ghalibadawi/" target="_blank" rel="noopener" aria-label="LinkedIn ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-[#38BDF8]" viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM14.5 9c-2.37 0-3.5 1.31-3.5 2.23V9H7v12h4v-6.4c0-1.27.61-2.6 2.29-2.6 1.63 0 2.21 1.23 2.21 2.7V21h4v-6.93C19.5 10.7 17.77 9 15.6 9c-.55 0-1.09.09-1.6.26z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 3. Instagram -->
+          <a href="https://www.instagram.com/badawighali/" target="_blank" rel="noopener" aria-label="Instagram ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-pink-400" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 .001 6.999A3.5 3.5 0 0 0 12 9.5zM18 6.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 4. TikTok -->
+          <a href="https://www.tiktok.com/@ghalibdw" target="_blank" rel="noopener" aria-label="TikTok ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-teal-300" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 5. YouTube -->
+          <a href="https://www.youtube.com/@ghalibdw" target="_blank" rel="noopener" aria-label="YouTube ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-rose-500" viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 6. Facebook -->
+          <a href="https://www.facebook.com/badawighali" target="_blank" rel="noopener" aria-label="Facebook ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-blue-400" viewBox="0 0 24 24"><path d="M22 12.06C22 6.48 17.52 2 11.94 2 6.36 2 1.88 6.48 1.88 12.06c0 5.02 3.67 9.19 8.47 9.94v-7.02H7.9v-2.92h2.45V9.78c0-2.42 1.44-3.76 3.65-3.76 1.06 0 2.18.19 2.18.19v2.4h-1.23c-1.21 0-1.59.75-1.59 1.52v1.82h2.71l-.43 2.92h-2.28V22c4.8-.75 8.47-4.92 8.47-9.94z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 7. X (Twitter) -->
+          <a href="https://x.com/ghalibdw" target="_blank" rel="noopener" aria-label="X Twitter ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-slate-200" viewBox="0 0 24 24"><path d="M18.9 2H21l-6.52 7.45L21.5 22h-4.93l-3.85-5.94L7.2 22H3l7.07-8.08L2.7 2h5.02l3.48 5.53L18.9 2zm-2.18 18h1.36L8.42 4H7.02l9.7 16z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </a>
+
+          <!-- 8. Discord -->
+          <button type="button" onclick="copyTextToClipboard('ghalibdw', 'Discord handle ghalibdw copied!')" aria-label="Copy Discord Handle ghalibdw" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all">
+            <svg class="w-4 h-4 fill-current shrink-0 text-indigo-400" viewBox="0 0 24 24"><path d="M20.32 4.37a19.8 19.8 0 0 0-4.89-1.52.07.07 0 0 0-.08.04c-.21.38-.44.87-.61 1.25a18.27 18.27 0 0 0-5.48 0 12.64 12.64 0 0 0-.62-1.25.07.07 0 0 0-.08-.04 19.74 19.74 0 0 0-4.89 1.52.07.07 0 0 0-.03.03C.53 9.05-.32 13.58.1 18.06a.08.08 0 0 0 .03.05 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .08-.03c.46-.63.87-1.3 1.22-2a.08.08 0 0 0-.04-.11 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1-.01-.13c.13-.09.25-.19.37-.29a.08.08 0 0 1 .08-.01c3.93 1.8 8.18 1.8 12.07 0a.08.08 0 0 1 .08.01c.12.1.24.2.37.29a.08.08 0 0 1-.01.13c-.6.35-1.22.65-1.87.9a.08.08 0 0 0-.04.11c.36.7.77 1.37 1.22 2a.08.08 0 0 0 .08.03 19.83 19.83 0 0 0 6-3.03.08.08 0 0 0 .03-.05c.5-5.18-.84-9.68-3.55-13.66a.06.06 0 0 0-.03-.03zM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42zm7.97 0c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.95 2.42-2.16 2.42z"/></svg>
+            <span class="font-mono text-xs font-medium">ghalibdw</span>
+          </button>
+
+          <!-- 9. Email -->
+          <a href="mailto:ghalibadawi08@gmail.com" aria-label="Email Ghali Badawi" class="flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-200 hover:text-white transition-all col-span-2 sm:col-span-1">
+            <svg class="w-4 h-4 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span class="font-mono text-xs font-medium">Email</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; <span id="footer-year">2026</span> <strong class="text-white font-semibold">Ghali Badawi</strong> (<span class="font-mono text-cyan-400">ghalibdw</span>). All rights reserved.</p>
+        <a href="#home" class="font-mono text-[11px] text-slate-400 hover:text-cyan-300 flex items-center gap-1.5 transition-colors">
+          <span>Back to Top</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- MODALS: PROJECT CASE STUDY, PRINTABLE RESUME, SKETCH, & LEGAL         -->
+  <!-- ===================================================================== -->
+
+  <!-- 1. Project Case Study & Interactive Demo Modal -->
+  <div id="project-modal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 sm:p-6 bg-slate-950/60 backdrop-blur-sm no-print" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 relative">
+      <button type="button" onclick="closeProjectModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-colors" aria-label="Close Project Case Study">
+        &#10005;
+      </button>
+      <div id="project-modal-content">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Printable 1-Page Executive Resume Modal -->
+  <div id="resume-modal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 sm:p-6 bg-slate-950/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-10 relative">
+      
+      <!-- Top Action Bar (Hidden when printing) -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200 no-print">
+        <div>
+          <span class="font-mono text-xs uppercase text-teal-600 font-semibold">Executive One-Page Format</span>
+          <h2 id="resume-modal-title" class="font-display font-bold text-xl text-slate-900">Ghali Badawi &mdash; Curriculum Vitae</h2>
+        </div>
+        <div class="flex items-center gap-2.5">
+          <button type="button" onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold btn-primary-gradient shadow-sm">
+            <svg class="w-4 h-4 text-brand-turquoise" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button type="button" onclick="closeResumeModal()" class="px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors">
+            Close
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Sheet -->
+      <div id="printable-resume-sheet" class="space-y-5 text-slate-800 text-xs sm:text-sm leading-relaxed">
+        <div class="border-b-2 border-slate-900 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <h1 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 tracking-tight">GHALI BADAWI</h1>
+            <p class="font-medium text-teal-700 text-sm">Computer Engineering Student &middot; Software Developer &middot; Collegiate Student-Athlete</p>
+          </div>
+          <div class="text-xs font-mono text-slate-600 sm:text-right space-y-0.5">
+            <div>Cupertino, CA &middot; WhatsApp: +1 (334) 710-4645</div>
+            <div>ghalibadawi08@gmail.com &middot; github.com/ghalibdw</div>
+            <div>linkedin.com/in/ghalibadawi</div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">Professional Summary</h3>
+          <p class="text-xs sm:text-sm text-slate-700">
+            Computer Engineering student at De Anza College with a strong foundation in advanced mathematics and physics (French Baccalaureate <em>Mention Tr&egrave;s Bien</em>, Top 5% Nationally, 4.0 GPA), building core software systems in C++, Java, Python, and TypeScript. Analytical problem solver with proven discipline, team leadership, and adaptability developed through collegiate soccer. Target transfer track: Stanford University, Massachusetts Institute of Technology (MIT), and University of California, Berkeley.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">Education</h3>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between font-semibold text-slate-900">
+                <span>De Anza College &mdash; Associate in Science for Transfer (AS-T), Computer Engineering</span>
+                <span class="font-mono text-xs">Expected June 2028</span>
+              </div>
+              <div class="text-xs text-slate-600">Cupertino, CA &middot; Coursework: Object-Oriented Programming (C++), Java Fundamentals, Calculus, Physics &middot; Men&rsquo;s Soccer Team</div>
+            </div>
+            <div>
+              <div class="flex justify-between font-semibold text-slate-900">
+                <span>Lyc&eacute;e Al Jabr &mdash; French Baccalaureate (Mention Tr&egrave;s Bien / High Honors, Top 5% National Scale)</span>
+                <span class="font-mono text-xs">Graduated July 2025</span>
+              </div>
+              <div class="text-xs text-slate-600">Casablanca, Morocco &middot; Cumulative GPA: 4.0 &middot; Specialization: Mathematics, Physics-Chemistry &amp; Maths Expertes (Differential Equations, Mechanics, Thermodynamics, Probability &amp; Statistics)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects & Experience -->
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">Selected Engineering Projects &amp; Experience</h3>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between font-semibold text-slate-900">
+                <span>MatchUp &mdash; Cross-Platform Pickup Soccer Matchmaking Application</span>
+                <span class="font-mono text-xs">TypeScript, Python, JS</span>
+              </div>
+              <p class="text-xs text-slate-600">Engineered a cross-platform mobile matchmaking application connecting amateur soccer players to organize, balance rosters, and complete local pickup games.</p>
+            </div>
+            <div>
+              <div class="flex justify-between font-semibold text-slate-900">
+                <span>Le Panier du Fermier &mdash; Retail Management &amp; Analytics Intern (Casablanca, Morocco)</span>
+                <span class="font-mono text-xs">Mar 2022 &ndash; Apr 2022</span>
+              </div>
+              <p class="text-xs text-slate-600">Implemented systematic inventory arrangements, evaluated sales metrics to identify key consumer trends, and executed strategic visual merchandising and social media campaigns.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Honors, Athletics & Leadership -->
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">Honors, Athletics &amp; Leadership</h3>
+          <ul class="list-disc pl-5 space-y-1 text-xs text-slate-700">
+            <li><strong>Scientific Competitions:</strong> National Qualifier in <em>Concours G&eacute;n&eacute;ral de Physique-Chimie</em>; Competitor in <em>National Math Olympiads</em>.</li>
+            <li><strong>Athletics &amp; Soccer Leadership:</strong> De Anza College Men&rsquo;s Soccer Midfielder; Selected for elite intensive training at <em>Complexe Mohammed VI de Football</em>; Team Captain leading squad to league championship &amp; regional semi-finals.</li>
+            <li><strong>Community Leadership:</strong> Certified Cultural Tour Guide (<em>Patrimoine Association</em>); Animal Welfare Volunteer Leader (<em>Patte sur mon C&oelig;ur</em>); Campus Eco-Delegate.</li>
+          </ul>
+        </div>
+
+        <!-- Technical Skills & Languages -->
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-200 pb-1 mb-2">Technical Skills, Benchmarks &amp; Languages</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <div><strong>Programming &amp; Web:</strong> C++, Java, Python, TypeScript, JavaScript, HTML5/CSS3, React, Node.js, Git/GitHub, Linux</div>
+            <div><strong>Standardized Tests &amp; Languages:</strong> SAT 1430 (Math 750), PIX Certified &middot; French (Native), Arabic (Native), English (TOEFL 100/120), Spanish (DELE A2)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Hand-Drawn Sketch Comparison Modal -->
+  <div id="sketch-modal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 sm:p-6 bg-slate-950/60 backdrop-blur-sm no-print" role="dialog" aria-modal="true" aria-labelledby="sketch-modal-title">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 relative">
+      <button type="button" onclick="closeSketchModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center" aria-label="Close Sketch Modal">
+        &#10005;
+      </button>
+      <span class="font-mono text-xs uppercase text-teal-600 font-semibold">From Concept to Production</span>
+      <h3 id="sketch-modal-title" class="font-display font-bold text-2xl text-slate-900 mt-1">Original Wireframe Sketch vs. Live Architecture</h3>
+      <p class="text-xs sm:text-sm text-slate-600 mt-2">
+        Every section of this portfolio directly honors your hand-drawn architecture blueprint: the split Hero with right-side portrait, the 3-card <code class="font-mono text-teal-700">FLOU | CLAIR | FLOU</code> carousel, the open <code class="font-mono text-teal-700">Libre</code> resume timeline, the <code class="font-mono text-teal-700">FN / LN</code> contact grid, and the <code class="font-mono text-teal-700">ghalibdw</code> footer.
+      </p>
+      <div class="mt-4 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50">
+        <img src="images/sketch_wireframe.jpg" alt="Ghali Badawi's original hand-drawn portfolio layout sketch" class="w-full max-h-[420px] object-contain mx-auto" />
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Legal & Governance Modal -->
+  <div id="legal-modal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 sm:p-6 bg-slate-950/60 backdrop-blur-sm no-print" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative">
+      <button type="button" onclick="closeLegalModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center" aria-label="Close Legal Dialog">
+        &#10005;
+      </button>
+      <div id="legal-modal-body">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Banner -->
+  <div id="toast-banner" class="fixed bottom-5 right-5 z-[80] hidden items-center gap-3 px-4 py-3 rounded-2xl bg-slate-900 text-white text-xs sm:text-sm font-medium shadow-2xl border border-slate-700/80 no-print" role="status" aria-live="polite">
+    <span class="w-2 h-2 rounded-full bg-brand-turquoise"></span>
+    <span id="toast-message">Action completed</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- APPLICATION JAVASCRIPT (3-Card Carousel Physics, Timeline, Modals)    -->
+  <!-- ===================================================================== -->
+  <script>
+    // 1. Project Dataset for the 3-Card Horizontal Carousel (FLOU | CLAIR | FLOU)
+    const PROJECTS_DATA = [
+      {
+        id: 'matchup',
+        badge: 'FEATURED MOBILE & FULL-STACK',
+        title: 'MatchUp — Pickup Soccer App',
+        shortTitle: 'MatchUp',
+        subtitle: 'Cross-Platform Athletic Matchmaking & Roster Engine',
+        description: 'A cross-platform mobile matchmaking application that connects amateur soccer players to effortlessly organize, balance rosters by position, join, and complete local pickup games.',
+        impact: 'Inspired by organizing pickup matches in Casablanca and Cupertino; features skill-balanced lobby creation, pitch geolocation check-ins, and reliability ratings.',
+        image: 'images/project_matchup.jpg',
+        tech: ['TypeScript', 'Python', 'JavaScript', 'Mobile UX', 'Geolocation'],
+        githubUrl: 'https://github.com/ghalibdw',
+        liveLabel: 'Interactive Case Study',
+        highlights: [
+          'Position-aware squad balancing algorithm (Forwards, Midfielders, Defenders, Keepers) written in Python & TypeScript.',
+          'Low-friction mobile check-in flow designed for one-handed use on the pitch with WCAG AA contrast.',
+          'Real-time player reliability & fair-play reputation scoring.'
+        ]
+      },
+      {
+        id: 'portfolio',
+        title: 'ghalibdw — Spatial Portfolio System',
+        shortTitle: 'ghalibdw.dev',
+        badge: 'DESIGN SYSTEM & FRONTEND',
+        subtitle: 'Accessible Single-Page Web Architecture & 3D Carousel',
+        description: 'Timeless, high-performance personal portfolio engineered with semantic HTML5, modern CSS glassmorphism, hardware-accelerated spatial carousel physics, and WCAG 2.1 AA accessibility.',
+        impact: 'Designed from a hand-drawn wireframe sketch to deliver sub-second perceived load, full keyboard navigation, and zero external runtime bloat.',
+        image: 'images/project_portfolio.jpg',
+        tech: ['HTML5', 'Modern CSS3', 'Vanilla JS', 'WCAG 2.1 AA', 'JSON-LD SEO'],
+        githubUrl: 'https://github.com/ghalibdw',
+        liveLabel: 'Inspect Architecture',
+        highlights: [
+          'Custom 3-slot spatial state machine (FLOU / CLAIR / FLOU) with 4-second autoplay, hover-to-focus intent, and mobile touch swipe physics.',
+          'Built-in print-ready executive resume sheet (@media print) and live portrait dropzone.',
+          '100% keyboard navigable with reduced-motion support and semantic landmark hierarchy.'
+        ]
+      },
+      {
+        id: 'physsim',
+        title: 'PhysSim C++ — Mechanics & ODE Lab',
+        shortTitle: 'PhysSim C++',
+        badge: 'SCIENTIFIC COMPUTING & C++',
+        subtitle: 'Classical Mechanics & Differential Equations Solver',
+        description: 'Object-oriented numerical simulation toolkit modeling coupled oscillators, projectile trajectories with drag, and phase-space orbits using 4th-order Runge-Kutta integration.',
+        impact: 'Bridges French Baccalaureate Maths Expertes & Concours Général de Physique-Chimie theory with De Anza C++ Object-Oriented Programming.',
+        image: 'images/project_physsim.jpg',
+        tech: ['C++', 'OOP', 'Differential Equations', 'Runge-Kutta RK4', 'Physics'],
+        githubUrl: 'https://github.com/ghalibdw',
+        liveLabel: 'Launch Spec & Formulae',
+        highlights: [
+          'Modular C++ class hierarchy (StateVector, ForceField, RK4Integrator) with zero-copy state updates.',
+          'Models harmonic damping, Lorentz electromagnetic particle deflection, and orbital energy conservation.',
+          'Validates numerical convergence against analytical closed-form solutions.'
+        ]
+      },
+      {
+        id: 'fermier',
+        title: 'FermierMetrics — Retail Analytics',
+        shortTitle: 'FermierMetrics',
+        badge: 'DATA ANALYSIS & OPERATIONS',
+        subtitle: 'Inventory Turnover & Consumer Trend Modeling',
+        description: 'Data analytics workflow developed from hands-on retail management experience at Le Panier du Fermier to track perishable SKU velocity, seasonal demand spikes, and promotional lift.',
+        impact: 'Transforms raw point-of-sale logs into clear stock-replenishment priorities and visual merchandising layouts.',
+        image: 'images/project_analytics.jpg',
+        tech: ['Python', 'Data Analysis', 'Inventory Optimization', 'Metrics', 'Strategy'],
+        githubUrl: 'https://github.com/ghalibdw',
+        liveLabel: 'View Analytics Case Study',
+        highlights: [
+          'Categorizes artisanal dairy & delicacy SKUs by turnover velocity and shelf-life sensitivity.',
+          'Quantifies promotional conversion lift across social media campaigns and in-store displays.',
+          'Reduces stockout frequency through automated reorder threshold alerts.'
+        ]
+      }
+    ];
+
+    // 2. Verified Resume Timeline Dataset
+    const TIMELINE_DATA = [
+      {
+        category: 'education',
+        badge: 'Education',
+        date: '2025 – Expected June 2028',
+        title: 'Associate in Science for Transfer (AS-T) in Computer Engineering',
+        org: 'De Anza College · Cupertino, California',
+        details: 'Coursework in Object-Oriented Programming (C++), Java Fundamentals, Multivariable Calculus, and Physics. Collegiate Student-Athlete on the Men’s Soccer Team. Transfer track: Stanford University, MIT, UC Berkeley.'
+      },
+      {
+        category: 'experience',
+        badge: 'Software Engineering',
+        date: '2025 – Present',
+        title: 'Creator & Lead Developer — MatchUp & ghalibdw.dev',
+        org: 'Personal Engineering Projects · Cupertino, CA',
+        details: 'Architected MatchUp (cross-platform pickup soccer matchmaking app in TypeScript, Python & JS) and a WCAG-accessible portfolio web application.'
+      },
+      {
+        category: 'education',
+        badge: 'Education & High Honors',
+        date: 'Graduated July 2025',
+        title: 'French Baccalaureate (Mention Très Bien / High Honors) — Top 5% National Scale',
+        org: 'Lycée Al Jabr · Casablanca, Morocco',
+        details: 'Cumulative GPA: 4.0/4.0. Specialization in Mathematics & Physics-Chemistry with Maths Expertes (Differential Equations, Mechanics, Thermodynamics, Probability & Statistics). SAT: 1430 (750 Math).'
+      },
+      {
+        category: 'honors',
+        badge: 'Academic Honors',
+        date: '2024 – 2025',
+        title: 'National Qualifier — Concours Général de Physique-Chimie & Math Olympiads',
+        org: 'National Scientific Competitions · Morocco',
+        details: 'Selected among top national science students for theoretical physics problem-solving and advanced mathematical olympiad competition.'
+      },
+      {
+        category: 'athletics',
+        badge: 'Elite Athletics',
+        date: '2023 – Present',
+        title: 'Elite Player Selection & Team Captain (Midfielder)',
+        org: 'Complexe Mohammed VI de Football & De Anza Men’s Soccer',
+        details: 'Selected for intensive training under Youth National Team and professional coaches with tactical video analysis. Led school and club teams to a league championship and regional semi-finals with multiple Man of the Match awards.'
+      },
+      {
+        category: 'honors',
+        badge: 'Cultural Leadership',
+        date: '2023 – 2024',
+        title: 'Certified Cultural Mediator & Historical Tour Guide',
+        org: '“Patrimoine” Association · Casablanca',
+        details: 'Completed a year-long heritage mediation program and guided educational historical tours of Casablanca for elementary, middle, and high school students.'
+      },
+      {
+        category: 'honors',
+        badge: 'Community & Sustainability',
+        date: '2023 – 2025',
+        title: 'Volunteer Leader & Campus Eco-Delegate',
+        org: '“Patte sur mon Cœur” Association & Lycée Al Jabr',
+        details: 'Organized stray animal vaccination and care drives; directed campus-wide sustainability, recycling, and waste-reduction campaigns.'
+      },
+      {
+        category: 'experience',
+        badge: 'Industry Internship',
+        date: 'Mar 2022 – Apr 2022',
+        title: 'Retail Management & Analytics Intern',
+        org: 'Le Panier du Fermier · Casablanca, Morocco',
+        details: 'Implemented systematic inventory arrangements, analyzed sales data to identify consumer trends, and executed visual merchandising and social media marketing strategies.'
+      }
+    ];
+
+    // 3. Carousel State & Physics
+    let activeProjectIndex = 0;
+    let autoplayEnabled = true;
+    let isHoveringCarousel = false;
+    let autoplayIntervalId = null;
+    let hoverIntentTimeout = null;
+    let pointerStartX = null;
+
+    function getSlotForIndex(idx, centerIdx, total) {
+      if (idx === centerIdx) return 'center';
+      const leftIdx = (centerIdx - 1 + total) % total;
+      const rightIdx = (centerIdx + 1) % total;
+      if (idx === leftIdx) return 'left';
+      if (idx === rightIdx) return 'right';
+      return 'hidden';
+    }
+
+    function renderCarouselStage() {
+      const stage = document.getElementById('projects-carousel-stage');
+      const dotsContainer = document.getElementById('carousel-dots');
+      if (!stage || !dotsContainer) return;
+
+      stage.innerHTML = '';
+      dotsContainer.innerHTML = '';
+
+      PROJECTS_DATA.forEach((proj, idx) => {
+        const slot = getSlotForIndex(idx, activeProjectIndex, PROJECTS_DATA.length);
+        const card = document.createElement('article');
+        card.className = 'carousel-card overflow-hidden p-5 sm:p-6';
+        card.setAttribute('data-slot', slot);
+        card.setAttribute('data-index', String(idx));
+        card.setAttribute('aria-label', proj.title);
+
+        const slotTag = slot === 'center' ? 'CLAIR // FOCUS' : (slot === 'left' ? 'FLOU // LEFT' : (slot === 'right' ? 'FLOU // RIGHT' : 'OFFSTAGE'));
+
+        card.innerHTML = `
+          <!-- Top Unblurred Header: Project Title stays 100% readable even on side FLOU cards -->
+          <div class="shrink-0">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="slot-badge px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider ${slot === 'center' ? 'bg-cyan-50 text-teal-800 border border-cyan-200' : 'bg-slate-200/80 text-slate-600'}">
+                ${proj.badge}
+              </span>
+              <span class="slot-indicator font-mono text-[10px] ${slot === 'center' ? 'text-teal-600 font-bold' : 'text-slate-400'}">
+                ${slotTag}
+              </span>
+            </div>
+
+            <h3 class="font-display font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight truncate">
+              ${proj.title}
+            </h3>
+          </div>
+
+          <!-- Selective Blur Target: Sharp on Center (CLAIR), Blurred on Left/Right (FLOU) -->
+          <div class="carousel-blur-target flex-1 flex flex-col justify-between mt-3 min-h-0">
+            <div>
+              <!-- Visual Preview Container -->
+              <div class="relative h-44 sm:h-48 w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 mb-3.5">
+                <img src="${proj.image}" alt="${proj.title} interface preview" class="w-full h-full object-cover" loading="lazy" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
+                <span class="absolute bottom-2.5 left-3 px-2.5 py-0.5 rounded-md text-[10px] font-mono font-medium bg-slate-900/85 text-white backdrop-blur-sm">
+                  ${proj.subtitle}
+                </span>
+              </div>
+
+              <!-- Concise Description (Strictly clamped to 2 lines so card height never changes) -->
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-2 mb-3">
+                ${proj.description}
+              </p>
+
+              <!-- Tech Stack Tags (Single clean row) -->
+              <div class="flex flex-wrap gap-1.5 overflow-hidden max-h-14">
+                ${proj.tech.map(t => `<span class="px-2.5 py-1 rounded-lg text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200/70">${t}</span>`).join('')}
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between gap-3 shrink-0">
+              <a href="${proj.githubUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-white transition-colors">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.26 3.41 9.72 8.15 11.3.6.12.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.31.73-4-1.6-4-1.6-.55-1.42-1.35-1.8-1.35-1.8-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.53 1.04.11-.8.42-1.35.77-1.66-2.64-.31-5.42-1.35-5.42-6a4.72 4.72 0 0 1 1.26-3.27 4.38 4.38 0 0 1 .12-3.23s1-.32 3.3 1.25a11.3 11.3 0 0 1 6 0c2.28-1.57 3.28-1.25 3.28-1.25.46 1.14.35 2.49.12 3.23a4.73 4.73 0 0 1 1.26 3.27c0 4.67-2.79 5.68-5.45 5.98.44.38.83 1.11.83 2.24 0 1.62-.02 2.93-.02 3.33 0 .32.22.7.83.58A11.51 11.51 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/></svg>
+                <span>ghalibdw</span>
+              </a>
+
+              <button type="button" onclick="event.stopPropagation(); openProjectModal('${proj.id}')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-50 hover:bg-cyan-100/80 text-teal-800 border border-cyan-200/80 transition-colors">
+                <span>${proj.liveLabel}</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+            </div>
+          </div>
+        `;
+
+        // Hovering over a side project smoothly transitions it to the center!
+        card.addEventListener('mouseenter', () => {
+          const currentSlot = card.getAttribute('data-slot');
+          if (currentSlot === 'left' || currentSlot === 'right') {
+            if (hoverIntentTimeout) clearTimeout(hoverIntentTimeout);
+            hoverIntentTimeout = setTimeout(() => {
+              setActiveProject(idx);
+            }, 170);
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          if (hoverIntentTimeout) {
+            clearTimeout(hoverIntentTimeout);
+            hoverIntentTimeout = null;
+          }
+        });
+
+        card.addEventListener('click', () => {
+          if (activeProjectIndex !== idx) {
+            setActiveProject(idx);
+          }
+        });
+
+        stage.appendChild(card);
+
+        // Navigation Dot inside elevated pill
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-selected', String(idx === activeProjectIndex));
+        dot.setAttribute('aria-label', `Jump to project ${idx + 1}: ${proj.shortTitle}`);
+        dot.className = idx === activeProjectIndex
+          ? 'h-3 w-9 rounded-full bg-gradient-brand transition-all duration-300 shadow-sm'
+          : 'h-3 w-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300';
+        dot.addEventListener('click', () => setActiveProject(idx));
+        dotsContainer.appendChild(dot);
+      });
+
+      updateCarouselStatusText();
+    }
+
+    function updateCarouselSlotsOnly() {
+      const stage = document.getElementById('projects-carousel-stage');
+      const dotsContainer = document.getElementById('carousel-dots');
+      if (!stage || !dotsContainer) return;
+
+      const cards = stage.querySelectorAll('.carousel-card');
+      cards.forEach((card) => {
+        const idx = Number(card.getAttribute('data-index'));
+        const slot = getSlotForIndex(idx, activeProjectIndex, PROJECTS_DATA.length);
+        card.setAttribute('data-slot', slot);
+
+        const slotTag = slot === 'center' ? 'CLAIR // FOCUS' : (slot === 'left' ? 'FLOU // LEFT' : (slot === 'right' ? 'FLOU // RIGHT' : 'OFFSTAGE'));
+        const ind = card.querySelector('.slot-indicator');
+        if (ind) {
+          ind.textContent = slotTag;
+          ind.className = `slot-indicator font-mono text-[10px] ${slot === 'center' ? 'text-teal-600 font-bold' : 'text-slate-400'}`;
+        }
+        const badge = card.querySelector('.slot-badge');
+        if (badge) {
+          badge.className = `slot-badge px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold uppercase tracking-wider ${slot === 'center' ? 'bg-cyan-50 text-teal-800 border border-cyan-200' : 'bg-slate-200/80 text-slate-600'}`;
+        }
+      });
+
+      const dots = dotsContainer.querySelectorAll('button');
+      dots.forEach((dot, idx) => {
+        dot.setAttribute('aria-selected', String(idx === activeProjectIndex));
+        dot.className = idx === activeProjectIndex
+          ? 'h-3 w-9 rounded-full bg-gradient-brand transition-all duration-300 shadow-sm'
+          : 'h-3 w-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300';
+      });
+
+      updateCarouselStatusText();
+    }
+
+    function updateCarouselStatusText() {
+      const caption = document.getElementById('carousel-status-caption');
+      if (!caption) return;
+      const proj = PROJECTS_DATA[activeProjectIndex];
+      const stateStr = isHoveringCarousel ? 'Paused on hover' : (autoplayEnabled ? 'Autoplay every 4s' : 'Autoplay paused');
+      caption.textContent = `Spotlight (${activeProjectIndex + 1}/${PROJECTS_DATA.length}): ${proj.shortTitle} · ${stateStr}`;
+    }
+
+    window.setActiveProject = function(idx) {
+      const total = PROJECTS_DATA.length;
+      activeProjectIndex = ((idx % total) + total) % total;
+      updateCarouselSlotsOnly();
+    };
+
+    window.stepCarousel = function(delta) {
+      window.setActiveProject(activeProjectIndex + delta);
+    };
+
+    window.toggleCarouselAutoplay = function() {
+      autoplayEnabled = !autoplayEnabled;
+      const dot = document.getElementById('autoplay-dot');
+      const label = document.getElementById('autoplay-label');
+      if (dot && label) {
+        if (autoplayEnabled) {
+          dot.className = 'w-2 h-2 rounded-full bg-emerald-500 animate-pulse';
+          label.textContent = 'Autoplay: 4.0s';
+        } else {
+          dot.className = 'w-2 h-2 rounded-full bg-slate-400';
+          label.textContent = 'Autoplay: Off';
+        }
+      }
+      updateCarouselStatusText();
+    };
+
+    function startCarouselTimer() {
+      if (autoplayIntervalId) clearInterval(autoplayIntervalId);
+      autoplayIntervalId = setInterval(() => {
+        if (autoplayEnabled && !isHoveringCarousel) {
+          window.stepCarousel(1);
+        }
+      }, 4000);
+    }
+
+    // 4. Project Case Study Modal
+    window.openProjectModal = function(projectId) {
+      const proj = PROJECTS_DATA.find(p => p.id === projectId) || PROJECTS_DATA[0];
+      const modal = document.getElementById('project-modal');
+      const container = document.getElementById('project-modal-content');
+      if (!modal || !container) return;
+
+      isHoveringCarousel = true;
+      container.innerHTML = `
+        <div class="space-y-5">
+          <div>
+            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-50 text-teal-800 border border-cyan-200">
+              ${proj.badge}
+            </span>
+            <h2 id="project-modal-title" class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 mt-2">
+              ${proj.title}
+            </h2>
+            <p class="text-sm font-medium text-teal-700">${proj.subtitle}</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-200 aspect-video bg-slate-100">
+            <img src="${proj.image}" alt="${proj.title}" class="w-full h-full object-cover" />
+          </div>
+
+          <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
+            <p><strong class="text-slate-900">Overview:</strong> ${proj.description}</p>
+            <p><strong class="text-slate-900">Engineering Context:</strong> ${proj.impact}</p>
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/80">
+            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-700 mb-3">Key Technical Architecture Highlights</h3>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+              ${proj.highlights.map(h => `<li class="flex items-start gap-2"><span class="text-brand-teal font-bold">&rarr;</span><span>${h}</span></li>`).join('')}
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-200">
+            <div class="flex flex-wrap gap-1.5">
+              ${proj.tech.map(t => `<span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-100 text-slate-800">${t}</span>`).join('')}
+            </div>
+            <div class="flex items-center gap-2.5">
+              <a href="${proj.githubUrl}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold bg-slate-900 text-white hover:bg-slate-800">
+                <span>GitHub (ghalibdw) &nearr;</span>
+              </a>
+              <button type="button" onclick="closeProjectModal()" class="px-4 py-2.5 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200">
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+
+    window.closeProjectModal = function() {
+      const modal = document.getElementById('project-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+      isHoveringCarousel = false;
+    };
+
+    // 5. About Pillars Interactive Switcher
+    const PILLAR_CONTENT = {
+      ai: 'Applying differential equations, linear algebra, and object-oriented C++/Python architecture to build intelligent algorithms, physics simulations, and data-driven matchmaking tools.',
+      ux: 'Crafting WCAG 2.1 AA compliant, keyboard-navigable interfaces where every animation, typographic scale, and micro-interaction serves human clarity rather than visual noise.',
+      athlete: 'Bringing the discipline of Complexe Mohammed VI training and collegiate midfield captaincy—two-a-day conditioning, rapid tactical adaptation, and high-trust teamwork—into software engineering teams.'
+    };
+
+    window.selectAboutPillar = function(key) {
+      const desc = document.getElementById('pillar-description');
+      if (desc && PILLAR_CONTENT[key]) {
+        desc.textContent = PILLAR_CONTENT[key];
+      }
+      ['ai', 'ux', 'athlete'].forEach(k => {
+        const btn = document.getElementById('pillar-tab-' + k);
+        if (btn) {
+          btn.className = k === key
+            ? 'pillar-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 text-white transition-all'
+            : 'pillar-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all';
+        }
+      });
+    };
+
+    // 6. Skills Filter
+    window.filterSkills = function(group) {
+      const cards = document.querySelectorAll('.skill-card');
+      cards.forEach(card => {
+        const cardGroup = card.getAttribute('data-skill-group');
+        if (group === 'all' || cardGroup === group) {
+          card.classList.remove('opacity-40', 'scale-[0.98]');
+          card.classList.add('opacity-100', 'scale-100');
+        } else {
+          card.classList.add('opacity-40', 'scale-[0.98]');
+          card.classList.remove('opacity-100', 'scale-100');
+        }
+      });
+
+      const buttons = document.querySelectorAll('.skill-filter-btn');
+      buttons.forEach(btn => {
+        const bGroup = btn.getAttribute('data-skill-btn');
+        btn.className = bGroup === group
+          ? 'skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 text-white shadow-sm transition-all'
+          : 'skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium text-slate-600 hover:text-slate-900 transition-all';
+      });
+    };
+
+    // 7. Interactive Resume Timeline Rendering & Filtering
+    window.renderTimeline = function(filterCategory) {
+      const list = document.getElementById('resume-timeline-list');
+      if (!list) return;
+      list.innerHTML = '';
+
+      const filtered = filterCategory === 'all'
+        ? TIMELINE_DATA
+        : TIMELINE_DATA.filter(item => item.category === filterCategory);
+
+      filtered.forEach((item) => {
+        const node = document.createElement('article');
+        node.className = 'premium-card rounded-2xl p-6 relative';
+        node.innerHTML = `
+          <span class="absolute -left-[31px] sm:-left-[47px] top-7 w-3.5 h-3.5 rounded-full bg-white border-[3px] border-brand-teal shadow-sm" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-cyan-50 text-teal-800 border border-cyan-200/70">
+              ${item.badge}
+            </span>
+            <time class="font-mono text-xs text-slate-500">${item.date}</time>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">${item.title}</h3>
+          <p class="text-xs sm:text-sm font-semibold text-teal-700 mt-0.5">${item.org}</p>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">${item.details}</p>
+        `;
+        list.appendChild(node);
+      });
+    };
+
+    window.filterTimeline = function(category) {
+      window.renderTimeline(category);
+      const buttons = document.querySelectorAll('.tl-filter-btn');
+      buttons.forEach(btn => {
+        const bCat = btn.getAttribute('data-tl-btn');
+        btn.className = bCat === category
+          ? 'tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-white shadow-sm transition-all'
+          : 'tl-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all';
+      });
+    };
+
+    // 8. Portrait Photo Loader (Supports ghalibadawi.jpg Upload + LocalStorage Persistence)
+    window.triggerPortraitUpload = function() {
+      const input = document.getElementById('portrait-file-input');
+      if (input) input.click();
+    };
+
+    window.handlePortraitFileSelect = function(event) {
+      const file = event.target && event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const dataUrl = e.target.result;
+        applyPortraitImage(dataUrl);
+        try {
+          localStorage.setItem('ghali_portrait_data_uri', dataUrl);
+        } catch (err) {}
+        showToast('Portrait photo updated!');
+      };
+      reader.readAsDataURL(file);
+    };
+
+    function applyPortraitImage(srcUrl) {
+      const img = document.getElementById('hero-portrait-img');
+      const fallback = document.getElementById('hero-portrait-fallback');
+      if (img && srcUrl) {
+        img.src = srcUrl;
+        img.classList.remove('hidden');
+        if (fallback) fallback.classList.add('opacity-0');
+      }
+    }
+
+    // 9. Modals (Resume, Sketch, Legal)
+    window.openResumeModal = function() {
+      const m = document.getElementById('resume-modal');
+      if (m) {
+        m.classList.remove('hidden');
+        m.classList.add('flex');
+      }
+    };
+
+    window.closeResumeModal = function() {
+      const m = document.getElementById('resume-modal');
+      if (m) {
+        m.classList.add('hidden');
+        m.classList.remove('flex');
+      }
+    };
+
+    window.openSketchModal = function() {
+      const m = document.getElementById('sketch-modal');
+      if (m) {
+        m.classList.remove('hidden');
+        m.classList.add('flex');
+      }
+    };
+
+    window.closeSketchModal = function() {
+      const m = document.getElementById('sketch-modal');
+      if (m) {
+        m.classList.add('hidden');
+        m.classList.remove('flex');
+      }
+    };
+
+    const LEGAL_COPY = {
+      privacy: {
+        title: 'Privacy Policy — ghalibdw',
+        body: 'This portfolio respects your privacy. Information submitted through the contact form (name, email, WhatsApp/phone number, subject, and message) is used solely to respond to your direct inquiry and is never sold or shared with third parties.'
+      },
+      cookies: {
+        title: 'Cookie & Local Storage Preferences',
+        body: 'This site uses zero third-party tracking cookies. Essential local browser storage is used only when you explicitly customize interactive preferences (such as previewing a custom portrait image).'
+      },
+      terms: {
+        title: 'Terms of Use / User Agreement',
+        body: 'All original source code, project write-ups, and personal branding (ghalibdw / Ghali Badawi) are © 2026 Ghali Badawi. Recruiters, admissions officers, and collaborators are welcome to download and print the resume sheet for evaluation.'
+      }
+    };
+
+    window.openLegalModal = function(type) {
+      const m = document.getElementById('legal-modal');
+      const body = document.getElementById('legal-modal-body');
+      const item = LEGAL_COPY[type] || LEGAL_COPY.privacy;
+      if (m && body) {
+        body.innerHTML = `
+          <span class="font-mono text-xs uppercase text-teal-600 font-semibold">ghalibdw Governance</span>
+          <h3 id="legal-modal-title" class="font-display font-bold text-xl text-slate-900 mt-1">${item.title}</h3>
+          <p class="text-sm text-slate-600 mt-3 leading-relaxed">${item.body}</p>
+          <div class="mt-6 flex justify-end">
+            <button type="button" onclick="closeLegalModal()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-white">Understood</button>
+          </div>
+        `;
+        m.classList.remove('hidden');
+        m.classList.add('flex');
+      }
+    };
+
+    window.closeLegalModal = function() {
+      const m = document.getElementById('legal-modal');
+      if (m) {
+        m.classList.add('hidden');
+        m.classList.remove('flex');
+      }
+    };
+
+    // 10. Mobile Menu Toggle
+    window.toggleMobileMenu = function() {
+      const drawer = document.getElementById('mobile-menu-drawer');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (!drawer || !btn) return;
+      const isHidden = drawer.classList.contains('hidden');
+      if (isHidden) {
+        drawer.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        drawer.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    };
+
+    window.closeMobileMenu = function() {
+      const drawer = document.getElementById('mobile-menu-drawer');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (drawer) drawer.classList.add('hidden');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    };
+
+    // 11. Contact Form Submission & Clipboard Helper
+    window.handleContactSubmit = function(event) {
+      event.preventDefault();
+      const fn = document.getElementById('contact-fn').value.trim();
+      const ln = document.getElementById('contact-ln').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const phone = document.getElementById('contact-phone').value.trim();
+      const subject = document.getElementById('contact-subject').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+      const feedback = document.getElementById('contact-form-feedback');
+
+      if (!fn || !ln || !email || !subject || !message) {
+        if (feedback) {
+          feedback.textContent = 'Please complete all required fields (*).';
+          feedback.className = 'text-xs font-semibold text-rose-600';
+        }
+        showToast('Please fill in all required fields.');
+        return;
+      }
+
+      const fullBody = `From: ${fn} ${ln}\nEmail: ${email}\nWhatsApp/Phone: ${phone || 'Not provided'}\n\n${message}`;
+      const mailtoLink = `mailto:ghalibadawi08@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullBody)}`;
+
+      if (feedback) {
+        feedback.innerHTML = `Message prepared for <strong>${fn} ${ln}</strong>! <a href="${mailtoLink}" class="underline text-teal-700 font-semibold ml-1">Click here to launch your email client &nearr;</a>`;
+        feedback.className = 'text-xs font-medium text-emerald-700';
+      }
+      showToast(`Thank you, ${fn}! Your message to Ghali is ready.`);
+      event.target.reset();
+    };
+
+    window.copyTextToClipboard = function(text, toastMsg) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(toastMsg);
+        }).catch(() => fallbackCopy(text, toastMsg));
+      } else {
+        fallbackCopy(text, toastMsg);
+      }
+    };
+
+    function fallbackCopy(text, toastMsg) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast(toastMsg);
+      } catch (err) {
+        showToast('Copy ready: ' + text);
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      const banner = document.getElementById('toast-banner');
+      const label = document.getElementById('toast-message');
+      if (!banner || !label) return;
+      label.textContent = msg;
+      banner.classList.remove('hidden');
+      banner.classList.add('flex');
+      setTimeout(() => {
+        banner.classList.add('hidden');
+        banner.classList.remove('flex');
+      }, 3400);
+    }
+
+    // 12. Initialize Everything on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCarouselStage();
+      window.renderTimeline('all');
+      startCarouselTimer();
+
+      // Pause Carousel Autoplay on Hover + Touch & Mouse Drag Support
+      const stage = document.getElementById('projects-carousel-stage');
+      if (stage) {
+        stage.addEventListener('mouseenter', () => {
+          isHoveringCarousel = true;
+          updateCarouselStatusText();
+        });
+        stage.addEventListener('mouseleave', () => {
+          isHoveringCarousel = false;
+          pointerStartX = null;
+          updateCarouselStatusText();
+        });
+        stage.addEventListener('touchstart', (e) => {
+          isHoveringCarousel = true;
+          pointerStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        stage.addEventListener('touchend', (e) => {
+          if (pointerStartX !== null) {
+            const diff = pointerStartX - e.changedTouches[0].screenX;
+            if (Math.abs(diff) > 36) {
+              window.stepCarousel(diff > 0 ? 1 : -1);
+            }
+          }
+          pointerStartX = null;
+          setTimeout(() => { isHoveringCarousel = false; updateCarouselStatusText(); }, 1500);
+        }, { passive: true });
+
+        // Keyboard navigation when carousel stage is focused
+        stage.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            window.stepCarousel(1);
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            window.stepCarousel(-1);
+          }
+        });
+      }
+
+      // Escape key closes any open modal
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          window.closeProjectModal();
+          window.closeResumeModal();
+          window.closeSketchModal();
+          window.closeLegalModal();
+        }
+      });
+
+      // Restore Saved Portrait Photo if Present
+      try {
+        const savedPortrait = localStorage.getItem('ghali_portrait_data_uri');
+        if (savedPortrait) applyPortraitImage(savedPortrait);
+      } catch (err) {}
+
+      // Button Ripple Micro-interaction
+      document.querySelectorAll('.ripple-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          const rect = this.getBoundingClientRect();
+          const circle = document.createElement('span');
+          const diameter = Math.max(rect.width, rect.height);
+          circle.style.width = circle.style.height = `${diameter}px`;
+          circle.style.left = `${e.clientX - rect.left - diameter / 2}px`;
+          circle.style.top = `${e.clientY - rect.top - diameter / 2}px`;
+          circle.className = 'ripple-effect';
+          this.appendChild(circle);
+          setTimeout(() => circle.remove(), 600);
+        });
+      });
+
+      // Scroll Spy for Active Navigation Link (Exact Canonical Order)
+      const sections = ['home', 'about', 'projects', 'experience', 'education', 'skills', 'resume', 'contact'];
+      window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY + 180;
+        let current = 'home';
+        for (const id of sections) {
+          const el = document.getElementById(id);
+          if (el && el.offsetTop <= scrollPos) {
+            current = id;
+          }
+        }
+        document.querySelectorAll('.nav-pill').forEach(link => {
+          const target = link.getAttribute('data-nav');
+          if (target === current) {
+            link.className = 'nav-pill px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-900 bg-white shadow-sm transition-all';
+          } else {
+            link.className = 'nav-pill px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all';
+          }
+        });
+      }, { passive: true });
+    });
+  </script>
 </body>
 </html>
